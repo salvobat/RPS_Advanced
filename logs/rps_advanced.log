@@ -1,0 +1,56 @@
+2025-04-03 11:33:48 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 11:34:46 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 11:35:10 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 11:36:26 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 11:36:26 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
+2025-04-03 11:37:31 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 11:37:31 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
+2025-04-03 11:37:31 [main] ERROR battaglia.tpsit.Main - Errore durante l'inizializzazione del gioco: / by zero
+2025-04-03 11:42:28 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 11:42:34 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 11:42:34 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 11:42:43 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: Ciao
+2025-04-03 11:43:20 [Thread-0] ERROR battaglia.tpsit.ClientHandler - Errore con il client: 
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at battaglia.tpsit.ClientHandler.run(Server.java:45)
+2025-04-03 11:43:58 [main] ERROR battaglia.tpsit.Client - Errore nel client: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at java.net.Socket.connect(Socket.java:556)
+	at java.net.Socket.<init>(Socket.java:452)
+	at java.net.Socket.<init>(Socket.java:229)
+	at battaglia.tpsit.Client.main(Client.java:14)
+2025-04-03 11:45:21 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 11:45:38 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 11:45:38 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 11:45:41 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
+2025-04-03 11:45:49 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Il client /127.0.0.1 si è disconnesso.
+2025-04-03 11:45:55 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 11:45:55 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 11:45:57 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
+2025-04-03 11:46:04 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 11:46:04 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 11:46:12 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciaooooo
+2025-04-03 11:46:15 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: nooooooo
+2025-04-03 11:46:27 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Il client /127.0.0.1 si è disconnesso.
+2025-04-03 11:46:35 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 11:46:40 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 11:46:45 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 11:46:50 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 11:46:55 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
