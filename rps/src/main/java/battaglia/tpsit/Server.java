@@ -18,8 +18,8 @@ public class Server {
             logger.info("Server avviato sulla porta {}", PORT);
             while (true) {
                 if (clientCount.get() >= MAX_CLIENTS) {
-                    logger.warn("Numero massimo di client raggiunto. Attesa...");
-                    Thread.sleep(2000);
+                    logger.warn("Numero massimo di client raggiunto. ("+MAX_CLIENTS+").");
+                    Thread.sleep(5000);
                     continue;
                 }
                 Socket clientSocket = serverSocket.accept();
