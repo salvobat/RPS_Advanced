@@ -54,3 +54,62 @@ java.net.ConnectException: Connection refused: connect
 2025-04-03 11:46:45 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
 2025-04-03 11:46:50 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
 2025-04-03 11:46:55 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:12:37 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:12:42 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:12:47 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:12:52 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:12:57 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:13:02 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:17:02 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
+2025-04-03 13:17:02 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
+2025-04-03 13:17:02 [main] ERROR battaglia.tpsit.Main - Errore durante l'inizializzazione del gioco: / by zero
+2025-04-03 13:17:14 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 13:17:20 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 13:17:20 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 13:17:23 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto:  c:; cd 'c:\Scuola\TPSIT\Progetto_TPSIT\RPS_Advanced'; & 'C:\Program Files (x86)\Eclipse Adoptium\jdk-8.0.362.9-hotspot\bin\java.exe' '-cp' 'C:\Users\salvo\AppData\Local\Temp\cp_4m8xz3w6ax51tdq9uc2evk5ch2.jar' 'battaglia.tpsit.Client' 
+2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
+2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
+2025-04-03 13:17:38 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
+2025-04-03 13:17:52 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
+2025-04-03 13:24:15 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 13:24:22 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
+2025-04-03 13:24:22 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:24:26 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: Ciao
+2025-04-03 13:24:26 [main] INFO  battaglia.tpsit.Client - Risposta dal server: ACK: Ciao
+2025-04-03 13:25:13 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:25:13 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso.
+2025-04-03 13:29:57 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
+2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
+2025-04-03 13:30:04 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
+2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 2
+2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:30:19 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
+2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
+2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 3
+2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:30:23 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
+2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
+2025-04-03 13:30:26 [Thread-2] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:30:26 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 2
+2025-04-03 13:32:16 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:32:16 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 1
+2025-04-03 13:32:17 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:32:17 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 0
+2025-04-03 13:41:47 [main] ERROR battaglia.tpsit.Client - Connessione rifiutata: il server potrebbe non essere attivo.
+2025-04-03 13:42:15 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
+2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
+2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
+2025-04-03 13:42:20 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
+2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 2
+2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
+2025-04-03 13:42:42 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
+2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
+2025-04-03 13:42:45 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:42:45 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 1
+2025-04-03 13:42:46 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
+2025-04-03 13:42:46 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 0

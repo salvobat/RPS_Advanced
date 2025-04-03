@@ -1,48 +1,54 @@
 package battaglia.tpsit;
-
 import java.io.*;
 import java.net.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Client {
-    private static final String SERVER_ADDRESS = "127.0.0.1"; // IP locale
+    private static final String SERVER_ADDRESS = "127.0.0.1";
     private static final int PORT = 12345;
-    private static final int RETRY_INTERVAL = 3000; // 3 secondi
+    private static final String HANDSHAKE_REQUEST = "HANDSHAKE_REQUEST";
+    private static final String HANDSHAKE_ACCEPTED = "HANDSHAKE_ACCEPTED";
     private static final Logger logger = LoggerFactory.getLogger(Client.class);
 
     public static void main(String[] args) {
-        while (true) {
-            try (Socket socket = new Socket(SERVER_ADDRESS, PORT);
-                 BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        try (Socket socket = new Socket()) {
+            socket.connect(new InetSocketAddress(SERVER_ADDRESS, PORT), 5000);
+            logger.info("Connesso al server su {}:{}", SERVER_ADDRESS, PORT);
+
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                  PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                 BufferedReader consoleInput = new BufferedReader(new InputStreamReader(System.in))) {
+                 BufferedReader userInput = new BufferedReader(new InputStreamReader(System.in))) {
 
-                logger.info("Connesso al server {} sulla porta {}", SERVER_ADDRESS, PORT);
-                System.out.println(in.readLine()); // Messaggio di benvenuto
-
-                String message;
-                while (true) {
-                    System.out.print("Inserisci un messaggio: ");
-                    message = consoleInput.readLine();
-                    if ("exit".equalsIgnoreCase(message)) {
-                        logger.info("Client chiuso dall'utente.");
-                        return;
-                    }
-                    out.println(message); // Invia al server
-                    String response = in.readLine(); // Attende risposta
-                    if (response == null) { 
-                        logger.warn("Connessione persa con il server.");
-                        break; 
-                    }
-                    System.out.println("Server: " + response);
+                // Invio del messaggio di handshake
+                out.println(HANDSHAKE_REQUEST);
+                String serverResponse = in.readLine();
+                if (!HANDSHAKE_ACCEPTED.equals(serverResponse)) {
+                    logger.error("Handshake fallito. Chiusura connessione.");
+                    return;
                 }
-            } catch (IOException e) {
-                logger.error("Connessione al server fallita. Riprovo in {} ms...", RETRY_INTERVAL);
-                try {
-                    Thread.sleep(RETRY_INTERVAL);
-                } catch (InterruptedException ignored) {}
+                logger.info("Handshake completato con successo.");
+
+                // Comunicazione normale
+                String input;
+                while (true) {
+                    System.out.print("Inserisci messaggio: ");
+                    input = userInput.readLine();
+                    if (input == null || input.equalsIgnoreCase("exit")) {
+                        logger.info("Disconnessione dal server.");
+                        break;
+                    }
+                    out.println(input);
+                    String response = in.readLine();
+                    logger.info("Risposta dal server: {}", response);
+                }
             }
+        } catch (SocketTimeoutException e) {
+            logger.error("Connessione al server fallita: timeout raggiunto.");
+        } catch (ConnectException e) {
+            logger.error("Connessione rifiutata: il server potrebbe non essere attivo.");
+        } catch (IOException e) {
+            logger.error("Errore di comunicazione con il server.", e);
         }
     }
 }
