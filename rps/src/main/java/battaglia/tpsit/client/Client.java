@@ -59,7 +59,7 @@ public class Client {
             this.writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             
             // Avvia il thread per la lettura dei messaggi dal server
-            this.clientHandler = new ClientHandler(this);
+            this.clientHandler = new ClientHandler(this, reader);  // Passa il reader direttamente
             Thread handlerThread = new Thread(clientHandler);
             handlerThread.setDaemon(true);
             handlerThread.start();

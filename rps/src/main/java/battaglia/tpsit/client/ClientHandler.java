@@ -15,6 +15,7 @@ public class ClientHandler implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(ClientHandler.class);
     
     private Client client;
+    private BufferedReader reader;
     private ObjectMapper objectMapper;
     private volatile boolean running;
     
@@ -22,9 +23,11 @@ public class ClientHandler implements Runnable {
      * Costruttore per il gestore dei messaggi.
      * 
      * @param client Il client a cui è associato questo handler
+     * @param reader Il BufferedReader per leggere i messaggi dal server
      */
-    public ClientHandler(Client client) {
+    public ClientHandler(Client client, BufferedReader reader) {
         this.client = client;
+        this.reader = reader;
         this.objectMapper = new ObjectMapper();
         this.running = true;
     }
@@ -32,11 +35,6 @@ public class ClientHandler implements Runnable {
     @Override
     public void run() {
         try {
-            // Get the BufferedReader from the client through reflection
-            BufferedReader reader = (BufferedReader) client.getClass()
-                .getDeclaredField("reader")
-                .get(client);
-            
             // Keep reading messages until stopped
             while (running) {
                 String messageStr = reader.readLine();
