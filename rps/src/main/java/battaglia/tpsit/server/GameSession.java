@@ -7,7 +7,10 @@ import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Rappresenta una sessione di gioco tra due giocatori.
@@ -20,7 +23,9 @@ public class GameSession {
     private String player2;
     private Map<String, GameMoves> moves;
     private boolean gameOver;
-    private boolean movesProcessed;
+    private volatile boolean movesProcessed;
+    private Server server;
+    private CountDownLatch movesLatch;
     
     /**
      * Costruttore per una nuova sessione di gioco.
@@ -28,14 +33,30 @@ public class GameSession {
      * @param sessionId ID della sessione
      * @param player1 Nome del primo giocatore
      * @param player2 Nome del secondo giocatore
+     * @param server Riferimento al server
      */
-    public GameSession(String sessionId, String player1, String player2) {
+    public GameSession(String sessionId, String player1, String player2, Server server) {
         this.sessionId = sessionId;
         this.player1 = player1;
         this.player2 = player2;
         this.moves = new HashMap<>();
         this.gameOver = false;
         this.movesProcessed = false;
+        this.server = server;
+        this.movesLatch = new CountDownLatch(2); // Attende le mosse di entrambi i giocatori
+    }
+
+    private Set<String> readyPlayers = new HashSet<>();
+
+    public synchronized void playerReadyForNextRound(String playerName) {
+        readyPlayers.add(playerName);
+        
+        // Se entrambi i giocatori sono pronti, resetta la sessione
+        if (readyPlayers.size() == 2) {
+            resetMoves();
+            readyPlayers.clear();
+            logger.info("Entrambi i giocatori pronti per una nuova manche");
+        }
     }
     
     /**
@@ -45,26 +66,56 @@ public class GameSession {
      * @param move Mossa effettuata
      */
     public synchronized void registerMove(String playerName, GameMoves move) {
+        if (moves.containsKey(playerName)) {
+            logger.warn("Il giocatore {} ha già effettuato una mossa", playerName);
+            return;
+        }
+        
         moves.put(playerName, move);
         logger.info("Giocatore {} ha scelto {}", playerName, move);
+        movesLatch.countDown();
         
         // Se entrambi i giocatori hanno fatto la loro mossa, processa il risultato
         if (moves.size() == 2 && !movesProcessed) {
-            processResult();
-            movesProcessed = true;
+            processAndSendResults();
         }
     }
     
     /**
-     * Processa il risultato della partita dopo che entrambi i giocatori hanno effettuato le loro mosse.
+     * Processa il risultato della partita e invia i risultati ai client.
      */
-    private void processResult() {
-        GameMoves move1 = moves.get(player1);
-        GameMoves move2 = moves.get(player2);
+    public synchronized void processAndSendResults() {
+        if (moves.size() != 2 || movesProcessed) {
+            return;
+        }
         
-        logger.info("Elaborazione risultato: {} ({}) vs {} ({})", player1, move1, player2, move2);
-        
-        // Il risultato è già disponibile attraverso getResultForPlayer
+        try {
+            // Attendiamo che entrambi i giocatori completino le loro mosse
+            movesLatch.await();
+            
+            // Otteniamo gli handler per entrambi i giocatori
+            ServerClientHandler handler1 = server.getConnectedClient(player1);
+            ServerClientHandler handler2 = server.getConnectedClient(player2);
+            
+            if (handler1 != null && handler2 != null) {
+                // Invia risultato al giocatore 1
+                GameResult result1 = getResultForPlayer(player1);
+                handler1.sendGameResult(result1);
+                
+                // Invia risultato al giocatore 2
+                GameResult result2 = getResultForPlayer(player2);
+                handler2.sendGameResult(result2);
+                
+                logger.info("Risultati inviati a entrambi i giocatori");
+            } else {
+                logger.error("Impossibile inviare risultati, uno o entrambi gli handler non sono disponibili");
+            }
+            
+            movesProcessed = true;
+        } catch (InterruptedException e) {
+            logger.error("Interruzione durante l'attesa delle mosse", e);
+            Thread.currentThread().interrupt();
+        }
     }
     
     /**
@@ -99,29 +150,6 @@ public class GameSession {
             return new GameResult(opponentName, opponentMove, playerMove, opponentMove.getWinDescription(playerMove));
         }
     }
-
-    public synchronized void processAndSendResults() {
-        if (moves.size() != 2 || movesProcessed) {
-            return;
-        }
-        
-        // Get handlers for both players
-        Server serverInstance = new Server();
-        ServerClientHandler handler1 = serverInstance.getConnectedClient(player1);
-        ServerClientHandler handler2 = serverInstance.getConnectedClient(player2);
-        
-        if (handler1 != null && handler2 != null) {
-            // Send result to player 1
-            GameResult result1 = getResultForPlayer(player1);
-            handler1.sendGameResult(result1);
-            
-            // Send result to player 2
-            GameResult result2 = getResultForPlayer(player2);
-            handler2.sendGameResult(result2);
-        }
-        
-        movesProcessed = true;
-    }
     
     /**
      * Resetta le mosse per una nuova manche.
@@ -129,6 +157,8 @@ public class GameSession {
     public synchronized void resetMoves() {
         moves.clear();
         movesProcessed = false;
+        movesLatch = new CountDownLatch(2); // Resetta il latch
+        logger.info("Sessione di gioco resettata per una nuova manche");
     }
     
     /**

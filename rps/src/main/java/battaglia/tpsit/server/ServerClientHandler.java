@@ -160,23 +160,13 @@ public class ServerClientHandler implements Runnable {
         // Registra la mossa nella sessione di gioco
         currentGameSession.registerMove(username, move);
         
-        // Controlla se entrambi i giocatori hanno effettuato la loro mossa
-        if (currentGameSession.bothPlayersMovedAndProcessed()) {
-            // Ottieni il risultato direttamente dalla sessione
-            GameResult result = currentGameSession.getResultForPlayer(username);
-            String resultJson = objectMapper.writeValueAsString(result);
-            String encryptedResultBase64 = CryptoUtils.encryptWithAES(resultJson, aesKey);
-            
-            Message resultMessage = Message.createResult(encryptedResultBase64);
-            sendMessage(resultMessage);
-        }
-        
-        // Non resettare qui la sessione - verrebbe fatto in un'altra fase del gioco
+        // Il processamento dei risultati è ora gestito dalla GameSession
+        // Non facciamo nulla qui, sarà la GameSession a occuparsi dell'invio dei risultati
     }
 
     public void readyForNextRound() {
-        if (currentGameSession != null && currentGameSession.bothPlayersMovedAndProcessed()) {
-            currentGameSession.resetMoves();
+        if (currentGameSession != null) {
+            currentGameSession.playerReadyForNextRound(username);
         }
     }
     
@@ -259,6 +249,8 @@ public class ServerClientHandler implements Runnable {
             logger.error("Errore durante l'invio del risultato di gioco", e);
         }
     }
+
+    
 
 
 }

@@ -95,6 +95,12 @@ public class Message implements Serializable {
         message.setType(MessageType.WAIT_OPPONENT);
         return message;
     }
+
+    public static Message createReady() {
+        Message message = new Message();
+        message.setType(MessageType.READY);
+        return message;
+    }
     
     // Getters e Setters
     

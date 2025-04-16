@@ -11,5 +11,6 @@ public enum MessageType {
     RESULT,       // Server -> Client: Invio risultato crittografato con AES
     ERROR,        // Entrambi: Segnalazione errori
     GAME_START,   // Server -> Client: Notifica inizio partita
-    WAIT_OPPONENT // Server -> Client: In attesa dell'avversario
+    WAIT_OPPONENT,// Server -> Client: In attesa dell'avversario
+    READY         // Client -> Client: Pronto per la prossima manche
 }

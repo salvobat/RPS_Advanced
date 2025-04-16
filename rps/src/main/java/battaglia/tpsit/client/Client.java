@@ -78,6 +78,8 @@ public class Client {
         
         return connectionFuture;
     }
+
+    
     
     /**
      * Invia una mossa al server.
@@ -246,6 +248,11 @@ public class Client {
         } catch (Exception e) {
             logger.error("Errore durante la chiusura della connessione", e);
         }
+    }
+
+    public void readyForNextRound() throws Exception {
+        Message readyMessage = Message.createReady();
+        sendMessage(readyMessage);
     }
     
     /**

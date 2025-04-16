@@ -129,7 +129,7 @@ public class Server {
                 
                 // Crea una nuova sessione di gioco
                 String sessionId = player1 + "-" + player2;
-                GameSession gameSession = new GameSession(sessionId, player1, player2);
+                GameSession gameSession = new GameSession(sessionId, player1, player2, this);
                 gameSessions.put(sessionId, gameSession);
                 
                 // Notifica i client dell'inizio della partita

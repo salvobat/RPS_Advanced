@@ -249,9 +249,15 @@ public class ClientGUI {
         
         playAgainButton = new JButton("Gioca ancora");
         playAgainButton.addActionListener(e -> {
-            // Torna alla schermata di gioco per una nuova partita
-            setMoveButtonsEnabled(true);
-            showPanel("game");
+            // Invia al server la richiesta di nuovo turno
+            try {
+                client.readyForNextRound();
+                // Torna alla schermata di gioco
+                setMoveButtonsEnabled(true);
+                showPanel("game");
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(frame, "Errore: " + ex.getMessage());
+            }
         });
         
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
