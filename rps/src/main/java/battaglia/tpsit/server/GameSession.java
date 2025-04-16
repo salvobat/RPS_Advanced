@@ -99,6 +99,29 @@ public class GameSession {
             return new GameResult(opponentName, opponentMove, playerMove, opponentMove.getWinDescription(playerMove));
         }
     }
+
+    public synchronized void processAndSendResults() {
+        if (moves.size() != 2 || movesProcessed) {
+            return;
+        }
+        
+        // Get handlers for both players
+        Server serverInstance = new Server();
+        ServerClientHandler handler1 = serverInstance.getConnectedClient(player1);
+        ServerClientHandler handler2 = serverInstance.getConnectedClient(player2);
+        
+        if (handler1 != null && handler2 != null) {
+            // Send result to player 1
+            GameResult result1 = getResultForPlayer(player1);
+            handler1.sendGameResult(result1);
+            
+            // Send result to player 2
+            GameResult result2 = getResultForPlayer(player2);
+            handler2.sendGameResult(result2);
+        }
+        
+        movesProcessed = true;
+    }
     
     /**
      * Resetta le mosse per una nuova manche.

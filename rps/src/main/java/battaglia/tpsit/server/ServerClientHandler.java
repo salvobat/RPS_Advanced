@@ -162,15 +162,20 @@ public class ServerClientHandler implements Runnable {
         
         // Controlla se entrambi i giocatori hanno effettuato la loro mossa
         if (currentGameSession.bothPlayersMovedAndProcessed()) {
-            // Ottieni il risultato e invialo al client
+            // Ottieni il risultato direttamente dalla sessione
             GameResult result = currentGameSession.getResultForPlayer(username);
             String resultJson = objectMapper.writeValueAsString(result);
             String encryptedResultBase64 = CryptoUtils.encryptWithAES(resultJson, aesKey);
             
             Message resultMessage = Message.createResult(encryptedResultBase64);
             sendMessage(resultMessage);
-            
-            // Reset della sessione per una nuova mossa
+        }
+        
+        // Non resettare qui la sessione - verrebbe fatto in un'altra fase del gioco
+    }
+
+    public void readyForNextRound() {
+        if (currentGameSession != null && currentGameSession.bothPlayersMovedAndProcessed()) {
             currentGameSession.resetMoves();
         }
     }
@@ -242,4 +247,18 @@ public class ServerClientHandler implements Runnable {
             }
         }
     }
+
+    public void sendGameResult(GameResult result) {
+        try {
+            String resultJson = objectMapper.writeValueAsString(result);
+            String encryptedResultBase64 = CryptoUtils.encryptWithAES(resultJson, aesKey);
+            
+            Message resultMessage = Message.createResult(encryptedResultBase64);
+            sendMessage(resultMessage);
+        } catch (Exception e) {
+            logger.error("Errore durante l'invio del risultato di gioco", e);
+        }
+    }
+
+
 }

@@ -146,6 +146,10 @@ public class Server {
             }
         }
     }
+
+    public ServerClientHandler getConnectedClient(String username) {
+        return connectedClients.get(username);
+    }
     
     /**
      * Verifica se un client è già in una sessione di gioco.

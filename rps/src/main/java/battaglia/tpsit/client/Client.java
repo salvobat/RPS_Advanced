@@ -204,8 +204,15 @@ public class Client {
         GameResult result = objectMapper.readValue(resultJson, GameResult.class);
         logger.info("Risultato ricevuto: {}", result.getWinDescription());
         
-        // Completa il future del risultato
-        resultFuture.complete(result);
+        // Verifica se il future è già completato
+        if (!resultFuture.isDone()) {
+            // Completa il future del risultato
+            resultFuture.complete(result);
+        } else {
+            logger.warn("Risultato ricevuto ma il future era già completato");
+            // Crea un nuovo future e lo completa immediatamente
+            resultFuture = CompletableFuture.completedFuture(result);
+        }
     }
     
     /**
