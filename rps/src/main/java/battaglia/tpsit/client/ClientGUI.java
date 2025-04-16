@@ -290,7 +290,7 @@ public class ClientGUI {
     private void showResult(GameResult result) {
         StringBuilder sb = new StringBuilder();
         sb.append("Risultato della partita:\n\n");
-        sb.append("La tua mossa: ").append(lastMove).append("\n");
+        sb.append("La tua mossa: ").append(result.getPlayerMove()).append("\n");
         sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
         
         if (result.isDraw()) {
