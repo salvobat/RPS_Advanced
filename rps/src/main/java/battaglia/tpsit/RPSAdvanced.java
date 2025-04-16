@@ -48,7 +48,7 @@ public class RPSAdvanced {
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(3, 1, 10, 10));
         
-        JLabel label = new JLabel("Seleziona la modalità di avvio:", SwingConstants.CENTER);
+        JLabel label = new JLabel("Seleziona cosa vuoi avviare:", SwingConstants.CENTER);
         
         JButton serverButton = new JButton("Avvia Server");
         serverButton.addActionListener(e -> {
