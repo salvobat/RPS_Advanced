@@ -172,7 +172,7 @@ public class ClientGUI {
         gamePanel = new JPanel(new BorderLayout());
         
         JPanel infoPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        opponentLabel = new JLabel("Giocando contro: ");
+        opponentLabel = new JLabel("Stai giocando contro: ");
         infoPanel.add(opponentLabel);
         
         JPanel buttonsPanel = new JPanel(new GridLayout(3, 2, 10, 10));
@@ -268,7 +268,7 @@ public class ClientGUI {
         client.waitForGameStart().thenAccept(opponentName -> {
             SwingUtilities.invokeLater(() -> {
                 // Aggiorna l'etichetta con il nome dell'avversario
-                opponentLabel.setText("Giocando contro: " + opponentName);
+                opponentLabel.setText("Stai giocando contro: " + opponentName);
                 
                 // Passa alla schermata di gioco
                 showPanel("game");
