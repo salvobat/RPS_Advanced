@@ -1,3 +1,4 @@
+<!-- Questo file dovrebbe essere salvato in src/main/resources/logback.xml -->
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -14,12 +15,12 @@
         </encoder>
     </appender>
 
-    <logger name="com.example.rpsadvanced" level="DEBUG" additivity="true">
+    <logger name="battaglia.tpsit" level="DEBUG" additivity="true">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </logger>
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
     </root>
