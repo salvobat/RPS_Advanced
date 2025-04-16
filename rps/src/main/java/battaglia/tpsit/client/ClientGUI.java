@@ -155,11 +155,14 @@ public class ClientGUI {
         JLabel waitLabel = new JLabel("In attesa di un avversario...", SwingConstants.CENTER);
         waitLabel.setFont(new Font("Arial", Font.BOLD, 16));
         
-        JPanel spinnerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        spinnerPanel.add(new JLabel(new ImageIcon(getClass().getResource("/spinner.gif")))); // Assicurati di avere questa risorsa
+        // Versione senza immagine
+        JPanel animationPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JLabel loadingLabel = new JLabel("Caricamento...");
+        loadingLabel.setFont(new Font("Arial", Font.ITALIC, 14));
+        animationPanel.add(loadingLabel);
         
         waitingPanel.add(waitLabel, BorderLayout.NORTH);
-        waitingPanel.add(spinnerPanel, BorderLayout.CENTER);
+        waitingPanel.add(animationPanel, BorderLayout.CENTER);
     }
     
     /**
