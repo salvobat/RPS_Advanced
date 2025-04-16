@@ -1,599 +1,342 @@
-2025-04-03 11:33:48 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 11:34:46 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 11:35:10 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 11:36:26 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 11:36:26 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
-2025-04-03 11:37:31 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 11:37:31 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
-2025-04-03 11:37:31 [main] ERROR battaglia.tpsit.Main - Errore durante l'inizializzazione del gioco: / by zero
-2025-04-03 11:42:28 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 11:42:34 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 11:42:34 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 11:42:43 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: Ciao
-2025-04-03 11:43:20 [Thread-0] ERROR battaglia.tpsit.ClientHandler - Errore con il client: 
-java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:210)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
-	at java.io.InputStreamReader.read(InputStreamReader.java:184)
-	at java.io.BufferedReader.fill(BufferedReader.java:161)
-	at java.io.BufferedReader.readLine(BufferedReader.java:324)
-	at java.io.BufferedReader.readLine(BufferedReader.java:389)
-	at battaglia.tpsit.ClientHandler.run(Server.java:45)
-2025-04-03 11:43:58 [main] ERROR battaglia.tpsit.Client - Errore nel client: 
+2025-04-16 12:28:43 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:28:43 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:28:47 [AWT-EventQueue-0] ERROR battaglia.tpsit.client.Client - Errore durante la connessione al server
 java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:607)
-	at java.net.Socket.connect(Socket.java:556)
-	at java.net.Socket.<init>(Socket.java:452)
-	at java.net.Socket.<init>(Socket.java:229)
-	at battaglia.tpsit.Client.main(Client.java:14)
-2025-04-03 11:45:21 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 11:45:38 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 11:45:38 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 11:45:41 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
-2025-04-03 11:45:49 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Il client /127.0.0.1 si è disconnesso.
-2025-04-03 11:45:55 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 11:45:55 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 11:45:57 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
-2025-04-03 11:46:04 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 11:46:04 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 11:46:12 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciaooooo
-2025-04-03 11:46:15 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: nooooooo
-2025-04-03 11:46:27 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Il client /127.0.0.1 si è disconnesso.
-2025-04-03 11:46:35 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 11:46:40 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 11:46:45 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 11:46:50 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 11:46:55 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:12:37 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:12:42 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:12:47 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:12:52 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:12:57 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:13:02 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:17:02 [main] INFO  battaglia.tpsit.Main - Avvio del Main...
-2025-04-03 13:17:02 [main] DEBUG battaglia.tpsit.Main - Configurazione caricacata correttamente
-2025-04-03 13:17:02 [main] ERROR battaglia.tpsit.Main - Errore durante l'inizializzazione del gioco: / by zero
-2025-04-03 13:17:14 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 13:17:20 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 13:17:20 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 13:17:23 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto:  c:; cd 'c:\Scuola\TPSIT\Progetto_TPSIT\RPS_Advanced'; & 'C:\Program Files (x86)\Eclipse Adoptium\jdk-8.0.362.9-hotspot\bin\java.exe' '-cp' 'C:\Users\salvo\AppData\Local\Temp\cp_4m8xz3w6ax51tdq9uc2evk5ch2.jar' 'battaglia.tpsit.Client' 
-2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso: /127.0.0.1
-2025-04-03 13:17:23 [main] INFO  battaglia.tpsit.Client - Connesso al server 127.0.0.1 sulla porta 12345
-2025-04-03 13:17:38 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: ciao
-2025-04-03 13:17:52 [main] ERROR battaglia.tpsit.Client - Connessione al server fallita. Riprovo in 3000 ms...
-2025-04-03 13:24:15 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 13:24:22 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
-2025-04-03 13:24:22 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:24:26 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Messaggio ricevuto: Ciao
-2025-04-03 13:24:26 [main] INFO  battaglia.tpsit.Client - Risposta dal server: ACK: Ciao
-2025-04-03 13:25:13 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:25:13 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso.
-2025-04-03 13:29:57 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
-2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:30:04 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
-2025-04-03 13:30:04 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
-2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 2
-2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:30:19 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
-2025-04-03 13:30:19 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
-2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 3
-2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:30:23 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
-2025-04-03 13:30:23 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
-2025-04-03 13:30:26 [Thread-2] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:30:26 [Thread-2] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 2
-2025-04-03 13:32:16 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:32:16 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 1
-2025-04-03 13:32:17 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:32:17 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 0
-2025-04-03 13:41:47 [main] ERROR battaglia.tpsit.Client - Connessione rifiutata: il server potrebbe non essere attivo.
-2025-04-03 13:42:15 [main] INFO  battaglia.tpsit.Server - Server avviato sulla porta 12345
-2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 1
-2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:42:20 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
-2025-04-03 13:42:20 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
-2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Server - Nuovo client connesso. Client attivi: 2
-2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Client - Connesso al server su 127.0.0.1:12345
-2025-04-03 13:42:42 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Handshake con il client completato con successo.
-2025-04-03 13:42:42 [main] INFO  battaglia.tpsit.Client - Handshake completato con successo.
-2025-04-03 13:42:45 [Thread-1] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:42:45 [Thread-1] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 1
-2025-04-03 13:42:46 [Thread-0] WARN  battaglia.tpsit.ClientHandler - Client disconnesso in modo anomalo.
-2025-04-03 13:42:46 [Thread-0] INFO  battaglia.tpsit.ClientHandler - Client disconnesso. Client attivi: 0
-2025-04-16 11:48:41 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
-2025-04-16 11:48:41 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
-2025-04-16 11:48:42 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
-2025-04-16 11:48:42 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
-2025-04-16 11:48:42 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
-2025-04-16 11:48:42 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
-2025-04-16 11:48:47 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:48:47 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:48:52 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:48:52 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:48:52 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore imprevisto nel client handler
-java.lang.IllegalAccessException: class battaglia.tpsit.client.ClientHandler cannot access a member of class battaglia.tpsit.client.Client with modifiers "private"
-	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:400)
-	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:670)
-	at java.base/java.lang.reflect.Field.checkAccess(Field.java:1152)
-	at java.base/java.lang.reflect.Field.get(Field.java:437)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:38)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:48:52 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore imprevisto nel client handler
-java.lang.IllegalAccessException: class battaglia.tpsit.client.ClientHandler cannot access a member of class battaglia.tpsit.client.Client with modifiers "private"
-	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:400)
-	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:670)
-	at java.base/java.lang.reflect.Field.checkAccess(Field.java:1152)
-	at java.base/java.lang.reflect.Field.get(Field.java:437)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:38)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:48:52 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:48:52 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:48:52 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo
-2025-04-16 11:48:52 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo
-2025-04-16 11:48:52 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvo
-2025-04-16 11:48:52 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvo
-2025-04-16 11:50:00 [pool-1-thread-1] ERROR b.tpsit.server.ServerClientHandler - Errore durante la comunicazione con il client
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:317)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.server.ServerClientHandler.run(ServerClientHandler.java:68)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:50:00 [pool-1-thread-1] ERROR b.tpsit.server.ServerClientHandler - Errore durante la comunicazione con il client
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:317)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.server.ServerClientHandler.run(ServerClientHandler.java:68)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:50:00 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo
-2025-04-16 11:50:00 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo
-2025-04-16 11:50:00 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo
-2025-04-16 11:50:00 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo
-2025-04-16 11:52:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
-2025-04-16 11:52:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
-2025-04-16 11:52:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
-2025-04-16 11:52:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
-2025-04-16 11:52:16 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
-2025-04-16 11:52:16 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
-2025-04-16 11:52:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:52:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:52:27 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:52:27 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvatore
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvatore
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvatore
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvatore
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvatore
-2025-04-16 11:52:27 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvatore
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:52:38 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:52:38 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:52:46 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:52:46 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: savio
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: savio
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: savio
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: savio
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: savio vs salvatore
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: savio vs salvatore
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro savio
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro savio
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvatore
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvatore
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: savio
-2025-04-16 11:52:46 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: savio
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:52:46 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:52:53 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:52:53 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:52:53 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore salvatore ha scelto Lizard
-2025-04-16 11:52:53 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore salvatore ha scelto Lizard
-2025-04-16 11:53:02 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:02 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:02 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: savio
-2025-04-16 11:53:02 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: savio
-2025-04-16 11:53:02 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: savio
-2025-04-16 11:53:02 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at battaglia.tpsit.client.Client.connect(Client.java:57)
+	at battaglia.tpsit.client.ClientGUI.lambda$0(ClientGUI.java:133)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-04-16 12:28:47 [AWT-EventQueue-0] ERROR battaglia.tpsit.client.Client - Errore durante la connessione al server
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at battaglia.tpsit.client.Client.connect(Client.java:57)
+	at battaglia.tpsit.client.ClientGUI.lambda$0(ClientGUI.java:133)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-04-16 12:28:49 [AWT-EventQueue-0] ERROR battaglia.tpsit.client.Client - Errore durante la connessione al server
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at battaglia.tpsit.client.Client.connect(Client.java:57)
+	at battaglia.tpsit.client.ClientGUI.lambda$0(ClientGUI.java:133)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-04-16 12:28:49 [AWT-EventQueue-0] ERROR battaglia.tpsit.client.Client - Errore durante la connessione al server
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at battaglia.tpsit.client.Client.connect(Client.java:57)
+	at battaglia.tpsit.client.ClientGUI.lambda$0(ClientGUI.java:133)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-04-16 12:28:56 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
+2025-04-16 12:28:56 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
+2025-04-16 12:28:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
+2025-04-16 12:28:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.server.Server - Chiavi RSA generate con successo
+2025-04-16 12:28:57 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
+2025-04-16 12:28:57 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
+2025-04-16 12:29:02 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:29:02 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-16 12:29:06 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-16 12:29:06 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-16 12:29:06 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo1
+2025-04-16 12:29:06 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo1
+2025-04-16 12:29:06 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvo1
+2025-04-16 12:29:06 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: salvo1
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
+2025-04-16 12:29:06 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
+2025-04-16 12:29:07 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvo1
+2025-04-16 12:29:07 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvo1
+2025-04-16 12:29:07 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-16 12:29:07 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-16 12:29:13 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:29:13 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-16 12:29:18 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-16 12:29:18 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo2
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: salvo2
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: salvo2
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: salvo2
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: salvo2 vs salvo1
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: salvo2 vs salvo1
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvo2
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvo2
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvo1
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro salvo1
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvo2
+2025-04-16 12:29:18 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: salvo2
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-16 12:29:18 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-16 12:29:24 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
+2025-04-16 12:29:24 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
+2025-04-16 12:29:24 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo1 ha scelto Rock
+2025-04-16 12:29:24 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo1 ha scelto Rock
+2025-04-16 12:29:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
+2025-04-16 12:29:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
+2025-04-16 12:29:26 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo2 ha scelto Lizard
+2025-04-16 12:29:26 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo2 ha scelto Lizard
+2025-04-16 12:29:26 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: salvo2 (Lizard) vs salvo1 (Rock)
+2025-04-16 12:29:26 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: salvo2 (Lizard) vs salvo1 (Rock)
+2025-04-16 12:29:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Rock crushes Lizard
+2025-04-16 12:29:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Rock crushes Lizard
+2025-04-16 12:29:36 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
+2025-04-16 12:29:36 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
+2025-04-16 12:29:36 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo2 ha scelto Rock
+2025-04-16 12:29:36 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore salvo2 ha scelto Rock
+2025-04-16 12:29:38 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo1
+2025-04-16 12:29:38 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo1
+2025-04-16 12:29:38 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo1
+2025-04-16 12:29:38 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo1
+2025-04-16 12:29:38 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-16 12:29:38 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-16 12:29:38 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
 java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:02 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: savio
-2025-04-16 11:53:02 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-16 12:29:38 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
 java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:14 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:14 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:17 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:17 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dawdawdawdawd
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dawdawdawdawd
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: dawdawdawdawd
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: dawdawdawdawd
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dawdawdawdawd
-2025-04-16 11:53:17 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dawdawdawdawd
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:17 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:18 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvatore
-2025-04-16 11:53:18 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: salvatore
-2025-04-16 11:53:18 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:18 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvatore
-2025-04-16 11:53:18 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:18 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvatore
-2025-04-16 11:53:18 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-16 12:29:39 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo2
+2025-04-16 12:29:39 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: salvo2
+2025-04-16 12:29:39 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-16 12:29:39 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-16 12:29:39 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo2
+2025-04-16 12:29:39 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: salvo2
+2025-04-16 12:29:39 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
 java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:18 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-16 12:29:39 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
 java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: dawdawdawd vs dawdawdawdawd
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: dawdawdawd vs dawdawdawdawd
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dawdawdawd
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dawdawdawdawd
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dawdawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dawdawdawd
-2025-04-16 11:53:26 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dawdawdawd
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
-2025-04-16 11:53:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
-2025-04-16 11:53:34 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawd ha scelto Rock
-2025-04-16 11:53:34 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawd ha scelto Rock
-2025-04-16 11:53:37 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
-2025-04-16 11:53:37 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawdawd ha scelto Rock
-2025-04-16 11:53:37 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Rock
-2025-04-16 11:53:37 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawdawd ha scelto Rock
-2025-04-16 11:53:37 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: dawdawdawd (Rock) vs dawdawdawdawd (Rock)
-2025-04-16 11:53:37 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: dawdawdawd (Rock) vs dawdawdawdawd (Rock)
-2025-04-16 11:53:37 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Rock
-2025-04-16 11:53:37 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Rock
-2025-04-16 11:53:46 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:53:46 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:53:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawdawd ha scelto Lizard
-2025-04-16 11:53:46 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore dawdawdawdawd ha scelto Lizard
-2025-04-16 11:53:49 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: dawdawdawd
-2025-04-16 11:53:49 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: dawdawdawd
-2025-04-16 11:53:49 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:49 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dawdawdawd
-2025-04-16 11:53:49 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:49 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dawdawdawd
-2025-04-16 11:53:49 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:49 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:53 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:53 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:53:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dddddddddddd
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: dddddddddddd
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: dddddddddddd
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: dddddddddddd
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dddddddddddd
-2025-04-16 11:53:57 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: dddddddddddd
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:57 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:53:59 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: dawdawdawdawd
-2025-04-16 11:53:59 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: dawdawdawdawd
-2025-04-16 11:53:59 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:59 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:53:59 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dawdawdawdawd
-2025-04-16 11:53:59 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dawdawdawdawd
-2025-04-16 11:53:59 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:53:59 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:54:05 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:54:05 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
-2025-04-16 11:54:11 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:54:11 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: ooooooooooooo
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: ooooooooooooo
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: ooooooooooooo
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: ooooooooooooo
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: ooooooooooooo vs dddddddddddd
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: ooooooooooooo vs dddddddddddd
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro ooooooooooooo
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro ooooooooooooo
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave pubblica RSA ricevuta dal server
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Chiave AES generata e inviata al server
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dddddddddddd
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro dddddddddddd
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: ooooooooooooo
-2025-04-16 11:54:11 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Chiave AES ricevuta e decifrata per l'utente: ooooooooooooo
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:54:11 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
-2025-04-16 11:54:17 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
-2025-04-16 11:54:17 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
-2025-04-16 11:54:17 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore ooooooooooooo ha scelto Spock
-2025-04-16 11:54:17 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore ooooooooooooo ha scelto Spock
-2025-04-16 11:54:19 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Paper
-2025-04-16 11:54:19 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Paper
-2025-04-16 11:54:19 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dddddddddddd ha scelto Paper
-2025-04-16 11:54:19 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dddddddddddd ha scelto Paper
-2025-04-16 11:54:19 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: ooooooooooooo (Spock) vs dddddddddddd (Paper)
-2025-04-16 11:54:19 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Elaborazione risultato: ooooooooooooo (Spock) vs dddddddddddd (Paper)
-2025-04-16 11:54:19 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Paper disproves Spock
-2025-04-16 11:54:19 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Paper disproves Spock
-2025-04-16 11:54:30 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: ooooooooooooo
-2025-04-16 11:54:30 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: ooooooooooooo
-2025-04-16 11:54:30 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:54:30 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:54:30 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: ooooooooooooo
-2025-04-16 11:54:30 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: ooooooooooooo
-2025-04-16 11:54:30 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:54:30 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:54:32 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:54:32 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lizard
-2025-04-16 11:54:32 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dddddddddddd ha scelto Lizard
-2025-04-16 11:54:32 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore dddddddddddd ha scelto Lizard
-2025-04-16 11:54:34 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: dddddddddddd
-2025-04-16 11:54:34 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: dddddddddddd
-2025-04-16 11:54:34 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dddddddddddd
-2025-04-16 11:54:34 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: dddddddddddd
-2025-04-16 11:54:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:54:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
-2025-04-16 11:54:34 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
-2025-04-16 11:54:34 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
-java.net.SocketException: Socket closed
-	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:242)
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:345)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:790)
-	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:983)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:970)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:175)
-	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333)
-	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400)
-	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
-	at java.base/java.lang.Thread.run(Thread.java:1447)
+	at java.base/java.lang.Thread.run(Unknown Source)
