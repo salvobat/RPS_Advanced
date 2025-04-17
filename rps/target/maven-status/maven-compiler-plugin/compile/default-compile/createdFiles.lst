@@ -1,0 +1,17 @@
+battaglia\tpsit\common\MessageType.class
+battaglia\tpsit\client\Client$1.class
+battaglia\tpsit\common\Message.class
+battaglia\tpsit\server\ServerClientHandler.class
+battaglia\tpsit\common\GameMoves.class
+battaglia\tpsit\server\GameLogic.class
+battaglia\tpsit\common\GameResult.class
+battaglia\tpsit\server\ServerClientHandler$1.class
+battaglia\tpsit\client\ClientHandler.class
+battaglia\tpsit\client\ClientGUI$1.class
+battaglia\tpsit\common\CryptoUtils.class
+battaglia\tpsit\common\GameMoves$1.class
+battaglia\tpsit\client\ClientGUI.class
+battaglia\tpsit\server\Server.class
+battaglia\tpsit\RPSAdvanced.class
+battaglia\tpsit\server\GameSession.class
+battaglia\tpsit\client\Client.class
