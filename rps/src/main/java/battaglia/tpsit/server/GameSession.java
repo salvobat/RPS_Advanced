@@ -56,7 +56,19 @@ public class GameSession {
             resetMoves();
             readyPlayers.clear();
             logger.info("Entrambi i giocatori pronti per una nuova manche");
+        
+            // Notifica entrambi i client dell'inizio della nuova partita
+            ServerClientHandler handler1 = server.getConnectedClient(player1);
+            ServerClientHandler handler2 = server.getConnectedClient(player2);
+        
+            if (handler1 != null && handler2 != null) {
+                handler1.notifyGameStart(player2);
+                handler2.notifyGameStart(player1);
+            } else {
+                logger.warn("Uno dei client non è più connesso");
+            }
         }
+        
     }
     
     /**

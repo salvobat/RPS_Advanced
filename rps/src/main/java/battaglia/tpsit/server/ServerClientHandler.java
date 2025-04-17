@@ -97,6 +97,10 @@ public class ServerClientHandler implements Runnable {
                 case MOVE:
                     handleMove(message);
                     break;
+                case READY:
+                    handleReady();
+                    break;
+                
                 default:
                     logger.warn("Tipo di messaggio non gestito: {}", message.getType());
             }
@@ -163,6 +167,12 @@ public class ServerClientHandler implements Runnable {
         // Il processamento dei risultati è ora gestito dalla GameSession
         // Non facciamo nulla qui, sarà la GameSession a occuparsi dell'invio dei risultati
     }
+
+    private void handleReady() {
+        logger.info("Giocatore {} ha cliccato Gioca Ancora", username);
+        readyForNextRound(); // richiama il metodo esistente
+    }
+    
 
     public void readyForNextRound() {
         if (currentGameSession != null) {

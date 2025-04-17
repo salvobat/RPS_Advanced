@@ -252,9 +252,9 @@ public class ClientGUI {
             // Invia al server la richiesta di nuovo turno
             try {
                 client.readyForNextRound();
-                // Torna alla schermata di gioco
-                setMoveButtonsEnabled(true);
-                showPanel("game");
+                showPanel("waiting");
+                waitForGameStart();
+
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(frame, "Errore: " + ex.getMessage());
             }
@@ -275,6 +275,8 @@ public class ClientGUI {
             SwingUtilities.invokeLater(() -> {
                 // Aggiorna l'etichetta con il nome dell'avversario
                 opponentLabel.setText("Stai giocando contro: " + opponentName);
+                
+                setMoveButtonsEnabled(true);
                 
                 // Passa alla schermata di gioco
                 showPanel("game");
