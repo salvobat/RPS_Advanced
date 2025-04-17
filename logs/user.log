@@ -77,3 +77,683 @@ java.net.SocketException: Socket closed
 	at java.base/java.io.BufferedReader.readLine(Unknown Source)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
 	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:07:50 INFO  - Avvio del server...
+2025-04-17 14:07:51 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:08:05 INFO  - Avvio del client...
+2025-04-17 14:08:06 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:08:07 INFO  - Client avviato e connesso al server
+2025-04-17 14:08:07 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:08:07 INFO  - Client registrato: 1
+2025-04-17 14:08:07 INFO  - In attesa di un avversario...
+2025-04-17 14:08:12 INFO  - Avvio del client...
+2025-04-17 14:08:17 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:08:17 INFO  - Client avviato e connesso al server
+2025-04-17 14:08:17 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:08:17 INFO  - Client registrato: 2
+2025-04-17 14:08:17 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:08:17 INFO  - Partita iniziata contro 2
+2025-04-17 14:08:17 INFO  - Partita iniziata contro 1
+2025-04-17 14:08:17 INFO  - In attesa di un avversario...
+2025-04-17 14:08:18 INFO  - Mossa inviata: Rock
+2025-04-17 14:08:18 INFO  - Giocatore 1 ha scelto Rock
+2025-04-17 14:08:19 INFO  - Mossa inviata: Paper
+2025-04-17 14:08:19 INFO  - Giocatore 2 ha scelto Paper
+2025-04-17 14:08:19 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:08:19 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:08:19 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:08:29 INFO  - Connessione chiusa
+2025-04-17 14:08:29 INFO  - Client rimosso: 1
+2025-04-17 14:08:29 INFO  - Connessione chiusa con: 1
+2025-04-17 14:08:29 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:08:30 INFO  - Client rimosso: 2
+2025-04-17 14:08:30 INFO  - Connessione chiusa
+2025-04-17 14:08:30 INFO  - Connessione chiusa con: 2
+2025-04-17 14:08:30 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:15:00 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:15:05 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:15:05 INFO  - Client avviato e connesso al server
+2025-04-17 14:15:05 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:15:05 INFO  - Client registrato: 1
+2025-04-17 14:15:05 INFO  - In attesa di un avversario...
+2025-04-17 14:15:09 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:15:09 INFO  - Richiesta di connessione da: 3
+2025-04-17 14:15:09 INFO  - Client registrato: 3
+2025-04-17 14:15:09 INFO  - Client avviato e connesso al server
+2025-04-17 14:15:09 INFO  - Partita iniziata contro 3
+2025-04-17 14:15:09 INFO  - Nuova sessione di gioco avviata: 1 vs 3
+2025-04-17 14:15:09 INFO  - Partita iniziata contro 1
+2025-04-17 14:15:09 INFO  - In attesa di un avversario...
+2025-04-17 14:15:15 INFO  - Mossa inviata: Rock
+2025-04-17 14:15:15 INFO  - Giocatore 1 ha scelto Rock
+2025-04-17 14:15:17 INFO  - Mossa inviata: Paper
+2025-04-17 14:15:17 INFO  - Giocatore 3 ha scelto Paper
+2025-04-17 14:15:17 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:15:17 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:15:17 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:15:41 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:15:41 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:16:34 ERROR - Errore durante la connessione al server
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.Net.connect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at java.base/java.net.Socket.<init>(Unknown Source)
+	at battaglia.tpsit.client.Client.connect(Client.java:57)
+	at battaglia.tpsit.client.ClientGUI.lambda$0(ClientGUI.java:140)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$5.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2025-04-17 14:16:43 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:16:48 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:16:48 INFO  - Client avviato e connesso al server
+2025-04-17 14:16:48 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:16:48 INFO  - Client registrato: 1
+2025-04-17 14:16:49 INFO  - In attesa di un avversario...
+2025-04-17 14:16:52 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:16:52 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:16:52 INFO  - Client avviato e connesso al server
+2025-04-17 14:16:52 INFO  - Client registrato: 2
+2025-04-17 14:16:52 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:16:52 INFO  - Partita iniziata contro 2
+2025-04-17 14:16:52 INFO  - Partita iniziata contro 1
+2025-04-17 14:16:52 INFO  - In attesa di un avversario...
+2025-04-17 14:17:03 INFO  - Mossa inviata: Rock
+2025-04-17 14:17:03 INFO  - Giocatore 2 ha scelto Rock
+2025-04-17 14:17:06 INFO  - Mossa inviata: Paper
+2025-04-17 14:17:06 INFO  - Giocatore 1 ha scelto Paper
+2025-04-17 14:17:06 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:17:06 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:17:06 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:17:16 INFO  - Connessione chiusa
+2025-04-17 14:17:16 INFO  - Client rimosso: 2
+2025-04-17 14:17:16 INFO  - Connessione chiusa con: 2
+2025-04-17 14:17:16 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:17:17 INFO  - Client rimosso: 1
+2025-04-17 14:17:17 INFO  - Connessione chiusa
+2025-04-17 14:17:17 INFO  - Connessione chiusa con: 1
+2025-04-17 14:17:17 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:18:02 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:18:26 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:18:26 INFO  - Client avviato e connesso al server
+2025-04-17 14:18:27 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:18:27 INFO  - Client registrato: 1
+2025-04-17 14:18:27 INFO  - In attesa di un avversario...
+2025-04-17 14:18:28 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:18:28 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:18:28 INFO  - Client registrato: 2
+2025-04-17 14:18:28 INFO  - Client avviato e connesso al server
+2025-04-17 14:18:28 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:18:28 INFO  - Partita iniziata contro 2
+2025-04-17 14:18:28 INFO  - Partita iniziata contro 1
+2025-04-17 14:18:28 INFO  - In attesa di un avversario...
+2025-04-17 14:18:30 INFO  - Mossa inviata: Rock
+2025-04-17 14:18:30 INFO  - Giocatore 1 ha scelto Rock
+2025-04-17 14:18:32 INFO  - Mossa inviata: Paper
+2025-04-17 14:18:32 INFO  - Giocatore 2 ha scelto Paper
+2025-04-17 14:18:32 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:18:32 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:18:32 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:18:41 INFO  - Connessione chiusa
+2025-04-17 14:18:41 INFO  - Client rimosso: 1
+2025-04-17 14:18:41 INFO  - Connessione chiusa con: 1
+2025-04-17 14:18:41 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:18:41 INFO  - Client rimosso: 2
+2025-04-17 14:18:41 INFO  - Connessione chiusa con: 2
+2025-04-17 14:18:41 INFO  - Connessione chiusa
+2025-04-17 14:18:41 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:18:56 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:18:59 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:18:59 INFO  - Client avviato e connesso al server
+2025-04-17 14:18:59 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:18:59 INFO  - Client registrato: 1
+2025-04-17 14:19:00 INFO  - In attesa di un avversario...
+2025-04-17 14:19:00 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:19:01 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:19:01 INFO  - Client registrato: 2
+2025-04-17 14:19:01 INFO  - Client avviato e connesso al server
+2025-04-17 14:19:01 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:19:01 INFO  - Partita iniziata contro 2
+2025-04-17 14:19:01 INFO  - Partita iniziata contro 1
+2025-04-17 14:19:01 INFO  - In attesa di un avversario...
+2025-04-17 14:19:02 INFO  - Mossa inviata: Spock
+2025-04-17 14:19:02 INFO  - Giocatore 1 ha scelto Spock
+2025-04-17 14:19:03 INFO  - Mossa inviata: Scissors
+2025-04-17 14:19:03 INFO  - Giocatore 2 ha scelto Scissors
+2025-04-17 14:19:03 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:19:03 INFO  - Risultato ricevuto: Spock smashes Scissors
+2025-04-17 14:19:03 INFO  - Risultato ricevuto: Spock smashes Scissors
+2025-04-17 14:19:12 INFO  - Connessione chiusa
+2025-04-17 14:19:12 INFO  - Client rimosso: 2
+2025-04-17 14:19:12 INFO  - Connessione chiusa con: 2
+2025-04-17 14:19:12 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:19:13 INFO  - Client rimosso: 1
+2025-04-17 14:19:13 INFO  - Connessione chiusa con: 1
+2025-04-17 14:19:13 INFO  - Connessione chiusa
+2025-04-17 14:19:13 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:19:54 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:19:58 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:19:58 INFO  - Client avviato e connesso al server
+2025-04-17 14:19:58 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:19:58 INFO  - Client registrato: 1
+2025-04-17 14:19:58 INFO  - In attesa di un avversario...
+2025-04-17 14:19:59 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:19:59 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:19:59 INFO  - Client registrato: 2
+2025-04-17 14:19:59 INFO  - Client avviato e connesso al server
+2025-04-17 14:19:59 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:19:59 INFO  - Partita iniziata contro 2
+2025-04-17 14:19:59 INFO  - Partita iniziata contro 1
+2025-04-17 14:20:00 INFO  - In attesa di un avversario...
+2025-04-17 14:20:00 INFO  - Mossa inviata: Rock
+2025-04-17 14:20:00 INFO  - Giocatore 1 ha scelto Rock
+2025-04-17 14:20:01 INFO  - Mossa inviata: Paper
+2025-04-17 14:20:01 INFO  - Giocatore 2 ha scelto Paper
+2025-04-17 14:20:01 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 14:20:01 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:20:01 INFO  - Risultato ricevuto: Paper covers Rock
+2025-04-17 14:20:08 INFO  - Connessione chiusa
+2025-04-17 14:20:08 INFO  - Client rimosso: 1
+2025-04-17 14:20:08 INFO  - Connessione chiusa con: 1
+2025-04-17 14:20:08 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:20:08 INFO  - Client rimosso: 2
+2025-04-17 14:20:08 INFO  - Connessione chiusa con: 2
+2025-04-17 14:20:08 INFO  - Connessione chiusa
+2025-04-17 14:20:08 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:21:02 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:21:03 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:21:03 INFO  - Client avviato e connesso al server
+2025-04-17 14:21:03 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:21:03 INFO  - Client registrato: 1
+2025-04-17 14:21:03 INFO  - In attesa di un avversario...
+2025-04-17 14:21:06 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:21:06 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:21:06 INFO  - Client avviato e connesso al server
+2025-04-17 14:21:06 INFO  - Client registrato: 2
+2025-04-17 14:21:06 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:21:06 INFO  - Partita iniziata contro 2
+2025-04-17 14:21:06 INFO  - Partita iniziata contro 1
+2025-04-17 14:21:06 INFO  - In attesa di un avversario...
+2025-04-17 14:21:10 INFO  - Connessione chiusa
+2025-04-17 14:21:10 INFO  - Client rimosso: 2
+2025-04-17 14:21:10 INFO  - Connessione chiusa con: 2
+2025-04-17 14:21:10 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:21:15 INFO  - Server arrestato
+2025-04-17 14:21:35 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:21:35 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:21:35 INFO  - Client registrato: 2
+2025-04-17 14:21:35 INFO  - Client avviato e connesso al server
+2025-04-17 14:21:35 INFO  - In attesa di un avversario...
+2025-04-17 14:21:39 INFO  - Client rimosso: 1
+2025-04-17 14:21:39 INFO  - Connessione chiusa con: 1
+2025-04-17 14:21:39 INFO  - Connessione chiusa
+2025-04-17 14:21:39 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:21:40 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:21:48 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:22:01 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:22:01 INFO  - Client avviato e connesso al server
+2025-04-17 14:22:01 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:22:01 INFO  - Client registrato: 1
+2025-04-17 14:22:02 INFO  - In attesa di un avversario...
+2025-04-17 14:22:03 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:22:03 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:22:03 INFO  - Client avviato e connesso al server
+2025-04-17 14:22:03 INFO  - Client registrato: 2
+2025-04-17 14:22:03 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:22:03 INFO  - Partita iniziata contro 2
+2025-04-17 14:22:03 INFO  - Partita iniziata contro 1
+2025-04-17 14:22:03 INFO  - In attesa di un avversario...
+2025-04-17 14:22:07 INFO  - Connessione chiusa
+2025-04-17 14:22:07 INFO  - Client rimosso: 1
+2025-04-17 14:22:07 INFO  - Connessione chiusa con: 1
+2025-04-17 14:22:07 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:22:08 INFO  - Client rimosso: 2
+2025-04-17 14:22:08 INFO  - Connessione chiusa
+2025-04-17 14:22:08 INFO  - Connessione chiusa con: 2
+2025-04-17 14:22:08 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:22:57 INFO  - Avvio del server...
+2025-04-17 14:22:58 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:23:03 INFO  - Avvio del client...
+2025-04-17 14:23:05 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:23:05 INFO  - Client avviato e connesso al server
+2025-04-17 14:23:05 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:23:05 INFO  - Client registrato: 1
+2025-04-17 14:23:05 INFO  - In attesa di un avversario...
+2025-04-17 14:23:11 INFO  - Avvio del client...
+2025-04-17 14:23:13 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:23:13 INFO  - Client avviato e connesso al server
+2025-04-17 14:23:13 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:23:13 INFO  - Client registrato: 2
+2025-04-17 14:23:13 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:23:13 INFO  - Partita iniziata contro 2
+2025-04-17 14:23:13 INFO  - Partita iniziata contro 1
+2025-04-17 14:23:13 INFO  - In attesa di un avversario...
+2025-04-17 14:23:19 INFO  - Connessione chiusa
+2025-04-17 14:23:19 INFO  - Client rimosso: 2
+2025-04-17 14:23:19 INFO  - Connessione chiusa con: 2
+2025-04-17 14:23:19 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:23:20 INFO  - Client rimosso: 1
+2025-04-17 14:23:20 INFO  - Connessione chiusa con: 1
+2025-04-17 14:23:20 INFO  - Connessione chiusa
+2025-04-17 14:23:20 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:24:35 INFO  - Avvio del server...
+2025-04-17 14:24:36 INFO  - Server avviato sulla porta 12345
+2025-04-17 14:24:43 INFO  - Avvio del client...
+2025-04-17 14:24:46 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:24:46 INFO  - Client avviato e connesso al server
+2025-04-17 14:24:46 INFO  - Richiesta di connessione da: 1
+2025-04-17 14:24:46 INFO  - Client registrato: 1
+2025-04-17 14:24:47 INFO  - In attesa di un avversario...
+2025-04-17 14:24:51 INFO  - Avvio del client...
+2025-04-17 14:24:52 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 14:24:52 INFO  - Client avviato e connesso al server
+2025-04-17 14:24:52 INFO  - Richiesta di connessione da: 2
+2025-04-17 14:24:52 INFO  - Client registrato: 2
+2025-04-17 14:24:53 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 14:24:53 INFO  - Partita iniziata contro 2
+2025-04-17 14:24:53 INFO  - Partita iniziata contro 1
+2025-04-17 14:24:53 INFO  - In attesa di un avversario...
+2025-04-17 14:24:59 INFO  - Mossa inviata: Lizard
+2025-04-17 14:24:59 INFO  - Giocatore 2 ha scelto Lizard
+2025-04-17 14:25:00 INFO  - Mossa inviata: Lizard
+2025-04-17 14:25:00 INFO  - Giocatore 1 ha scelto Lizard
+2025-04-17 14:25:00 INFO  - Risultato ricevuto: Draw - Both players chose Lizard
+2025-04-17 14:25:00 INFO  - Risultato ricevuto: Draw - Both players chose Lizard
+2025-04-17 14:25:07 INFO  - Connessione chiusa
+2025-04-17 14:25:07 INFO  - Client rimosso: 2
+2025-04-17 14:25:07 INFO  - Connessione chiusa con: 2
+2025-04-17 14:25:07 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 14:25:08 INFO  - Client rimosso: 1
+2025-04-17 14:25:08 INFO  - Connessione chiusa con: 1
+2025-04-17 14:25:08 INFO  - Connessione chiusa
+2025-04-17 14:25:08 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)

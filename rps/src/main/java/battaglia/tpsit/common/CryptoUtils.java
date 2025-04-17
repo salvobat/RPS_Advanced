@@ -1,7 +1,7 @@
 package battaglia.tpsit.common;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.slf4j.Logger; //Non usato
+// import org.slf4j.LoggerFactory; //Non usato
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -16,7 +16,7 @@ import java.util.Base64;
  * Classe di utilità per la gestione della crittografia.
  */
 public class CryptoUtils {
-    private static final Logger logger = LoggerFactory.getLogger(CryptoUtils.class);
+    // private static final Logger logger = LoggerFactory.getLogger(CryptoUtils.class); //Non usato
     
     private static final String RSA_ALGORITHM = "RSA";
     private static final String AES_ALGORITHM = "AES";

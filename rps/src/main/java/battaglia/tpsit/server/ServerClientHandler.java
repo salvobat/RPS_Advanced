@@ -19,7 +19,7 @@ import battaglia.tpsit.common.CryptoUtils;
 import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
 import battaglia.tpsit.common.Message;
-import battaglia.tpsit.common.MessageType;
+// import battaglia.tpsit.common.MessageType; //Non usato
 
 /**
  * Gestore della connessione con un singolo client sul lato server.

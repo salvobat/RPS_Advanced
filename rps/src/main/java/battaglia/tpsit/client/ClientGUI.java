@@ -2,20 +2,20 @@ package battaglia.tpsit.client;
 
 import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+// import org.slf4j.Logger; // Non usato
+// import org.slf4j.LoggerFactory; // Non usato
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.concurrent.CompletableFuture;
+// import java.util.concurrent.CompletableFuture; // Non usato
 
 /**
  * Interfaccia grafica per il client.
  */
 public class ClientGUI {
-    private static final Logger logger = LoggerFactory.getLogger(ClientGUI.class);
+    // private static final Logger logger = LoggerFactory.getLogger(ClientGUI.class); // Non usato
     
     private JFrame frame;
     private JPanel mainPanel;
@@ -44,6 +44,13 @@ public class ClientGUI {
      */
     public ClientGUI() {
         initializeGUI();
+    }
+
+    private GameMoves getLastMove() {
+        return lastMove;
+    }
+    private void setLastMove(GameMoves lastMove) {
+        this.lastMove = lastMove;
     }
     
     /**
@@ -209,7 +216,7 @@ public class ClientGUI {
             setMoveButtonsEnabled(false);
             
             // Invia la mossa al server
-            lastMove = move;
+            this.setLastMove(move);
             try {
                 client.sendMove(move).thenAccept(result -> {
                     // Mostra il risultato nella schermata apposita
@@ -292,20 +299,27 @@ public class ClientGUI {
     private void showResult(GameResult result) {
         StringBuilder sb = new StringBuilder();
         sb.append("Risultato della partita:\n\n");
-        sb.append("La tua mossa: ").append(result.getPlayerMove()).append("\n");
-        sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
+        // sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
+        // sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
         
+        String winner = result.getWinnerUsername();
         if (result.isDraw()) {
+            sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
+            sb.append("Mossa dell'avversario: ").append(this.getLastMove()).append("\n\n");
             sb.append("È un pareggio!\n");
-        } else {
-            String winner = result.getWinnerUsername();
-            if (winner.equals(client.getUsername())) {
-                sb.append("Hai vinto!\n");
-            } else {
-                sb.append("Hai perso!\n");
-            }
-            sb.append(result.getWinDescription());
+        } 
+        else if(winner.equals(client.getUsername())){
+            sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
+            sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
+            sb.append("Congratulazioni! Hai vinto!\n");
         }
+        else{
+            sb.append("La tua mossa: ").append(result.getOpponentMove()).append("\n");
+            sb.append("Mossa dell'avversario: ").append(result.getPlayerMove()).append("\n\n"); 
+            sb.append("Mi dispiace, hai perso!\n");
+        }
+
+        sb.append(result.getWinDescription()); //ES: "Rock crushes Scissors"
         
         resultArea.setText(sb.toString());
         showPanel("result");
