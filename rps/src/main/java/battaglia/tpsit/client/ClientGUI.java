@@ -33,7 +33,7 @@ public class ClientGUI {
     private JButton scissorsButton;
     private JButton lizardButton;
     private JButton spockButton;
-    private JTextArea resultArea;
+    private JEditorPane resultArea;
     private JButton playAgainButton;
     
     private Client client;
@@ -246,10 +246,10 @@ public class ClientGUI {
     private void initResultPanel() {
         resultPanel = new JPanel(new BorderLayout());
         
-        resultArea = new JTextArea(10, 30);
+        resultArea = new JEditorPane();
+        resultArea.setContentType("text/html");
         resultArea.setEditable(false);
-        resultArea.setLineWrap(true);
-        resultArea.setWrapStyleWord(true);
+        resultArea.setEditable(false);
         resultArea.setFont(new Font("Arial", Font.PLAIN, 14));
         
         JScrollPane scrollPane = new JScrollPane(resultArea);
@@ -297,31 +297,62 @@ public class ClientGUI {
      * @param result Il risultato della partita
      */
     private void showResult(GameResult result) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Risultato della partita:\n\n");
-        // sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
-        // sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
+        // Definizione dei colori e stili
+        String GREEN = "#2E8B57";
+        String RED = "#DC143C";
+        String BLUE = "#4682B4";
+        String BOLD = "<b>";
+        String END_BOLD = "</b>";
         
-        String winner = result.getWinnerUsername();
+        // Creazione del contenuto HTML
+        StringBuilder html = new StringBuilder();
+        html.append("<html><body style='font-family: Arial, sans-serif; padding: 10px;'>");
+        html.append("<h2 style='color: #333; text-align: center;'>Risultato della partita</h2>");
+        html.append("<div style='border: 1px solid #ccc; border-radius: 10px; padding: 15px; margin: 10px;'>");
+        
+        // Mosse dei giocatori
+        html.append("<table style='width: 100%; margin-bottom: 15px;'>");
+        html.append("<tr><td style='font-weight: bold; width: 50%'>La tua mossa:</td>");
+        
+        String yourMove;
+        String opponentMove;
+        String resultMessage;
+        String resultColor;
+        
         if (result.isDraw()) {
-            sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
-            sb.append("Mossa dell'avversario: ").append(this.getLastMove()).append("\n\n");
-            sb.append("È un pareggio!\n");
-        } 
-        else if(winner.equals(client.getUsername())){
-            sb.append("La tua mossa: ").append(this.getLastMove()).append("\n");
-            sb.append("Mossa dell'avversario: ").append(result.getOpponentMove()).append("\n\n");
-            sb.append("Congratulazioni! Hai vinto!\n");
+            yourMove = this.getLastMove().toString();
+            opponentMove = this.getLastMove().toString();
+            resultMessage = "È un pareggio!";
+            resultColor = BLUE;
+        } else if (result.getWinnerUsername().equals(client.getUsername())) {
+            yourMove = this.getLastMove().toString();
+            opponentMove = result.getOpponentMove().toString();
+            resultMessage = "Congratulazioni! Hai vinto!";
+            resultColor = GREEN;
+        } else {
+            yourMove = result.getOpponentMove().toString();
+            opponentMove = result.getPlayerMove().toString();
+            resultMessage = "Mi dispiace, hai perso!";
+            resultColor = RED;
         }
-        else{
-            sb.append("La tua mossa: ").append(result.getOpponentMove()).append("\n");
-            sb.append("Mossa dell'avversario: ").append(result.getPlayerMove()).append("\n\n"); 
-            sb.append("Mi dispiace, hai perso!\n");
-        }
-
-        sb.append(result.getWinDescription()); //ES: "Rock crushes Scissors"
         
-        resultArea.setText(sb.toString());
+        html.append("<td>").append(BOLD).append(yourMove).append(END_BOLD).append("</td></tr>");
+        html.append("<tr><td style='font-weight: bold'>Mossa dell'avversario:</td>");
+        html.append("<td>").append(BOLD).append(opponentMove).append(END_BOLD).append("</td></tr>");
+        html.append("</table>");
+        
+        // Risultato
+        html.append("<div style='text-align: center; margin: 20px 0;'>");
+        html.append("<h3 style='color: ").append(resultColor).append("; font-size: 18px;'>")
+            .append(resultMessage).append("</h3>");
+        
+        // Descrizione della vittoria
+        html.append("<p style='font-style: italic; color: #555;'>").append(result.getWinDescription()).append("</p>");
+        html.append("</div></div></body></html>");
+        
+        // Imposta il testo formattato nell'area risultato
+        resultArea.setContentType("text/html");
+        resultArea.setText(html.toString());
         showPanel("result");
     }
     
