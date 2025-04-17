@@ -6,21 +6,34 @@
         </encoder>
     </appender>
 
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>logs/rps_advanced.log</file>
+    <appender name="DEVELOPER" class="ch.qos.logback.core.FileAppender">
+        <file>logs/developer.log</file>
         <append>true</append>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <logger name="battaglia.tpsit" level="DEBUG" additivity="true">
+
+    <logger name="battaglia.tpsit" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE" />
-        <appender-ref ref="FILE" />
+        <appender-ref ref="DEVELOPER" />
     </logger>
 
-    <root level="INFO">
+    <appender name="USER" class="ch.qos.logback.core.FileAppender">
+        <file>logs/user.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="battaglia.tpsit" level="INFO" additivity="false">
+        <appender-ref ref="USER" />
+    </logger>
+
+    <!-- <root level="DEBUG">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
-    </root>
+    </root> -->
 </configuration>

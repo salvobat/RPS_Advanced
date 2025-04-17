@@ -39,7 +39,7 @@ public class Server {
         
         try {
             this.serverKeyPair = CryptoUtils.generateRSAKeyPair();
-            logger.info("Chiavi RSA generate con successo");
+            logger.debug("Chiavi RSA generate con successo");
         } catch (Exception e) {
             logger.error("Errore durante la generazione delle chiavi RSA", e);
             throw new RuntimeException("Impossibile avviare il server: errore di crittografia");

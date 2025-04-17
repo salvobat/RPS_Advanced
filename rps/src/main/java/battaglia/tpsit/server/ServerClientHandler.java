@@ -138,7 +138,7 @@ public class ServerClientHandler implements Runnable {
     private void handleAesKey(Message message) throws Exception {
         String encryptedKeyBase64 = message.getKey();
         this.aesKey = CryptoUtils.decryptAESKeyWithRSA(encryptedKeyBase64, privateKey);
-        logger.info("Chiave AES ricevuta e decifrata per l'utente: {}", username);
+        logger.debug("Chiave AES ricevuta e decifrata per l'utente: {}", username);
         
         // Notifica al client di aspettare un avversario
         sendMessage(Message.createWaitOpponent());

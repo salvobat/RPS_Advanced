@@ -1,0 +1,79 @@
+2025-04-17 13:38:15 INFO  - Avvio del server...
+2025-04-17 13:38:15 INFO  - Chiavi RSA generate con successo
+2025-04-17 13:38:15 INFO  - Server avviato sulla porta 12345
+2025-04-17 13:38:23 INFO  - Avvio del client...
+2025-04-17 13:38:28 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 13:38:28 INFO  - Client avviato e connesso al server
+2025-04-17 13:38:28 INFO  - Richiesta di connessione da: 1
+2025-04-17 13:38:28 INFO  - Client registrato: 1
+2025-04-17 13:38:28 INFO  - Chiave pubblica RSA ricevuta dal server
+2025-04-17 13:38:28 INFO  - Chiave AES generata e inviata al server
+2025-04-17 13:38:29 INFO  - Chiave AES ricevuta e decifrata per l'utente: 1
+2025-04-17 13:38:29 INFO  - In attesa di un avversario...
+2025-04-17 13:38:34 INFO  - Avvio del client...
+2025-04-17 13:38:36 INFO  - Nuova connessione da /127.0.0.1
+2025-04-17 13:38:36 INFO  - Client avviato e connesso al server
+2025-04-17 13:38:36 INFO  - Richiesta di connessione da: 2
+2025-04-17 13:38:36 INFO  - Client registrato: 2
+2025-04-17 13:38:36 INFO  - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 13:38:36 INFO  - Partita iniziata contro 2
+2025-04-17 13:38:36 INFO  - Chiave pubblica RSA ricevuta dal server
+2025-04-17 13:38:36 INFO  - Chiave AES generata e inviata al server
+2025-04-17 13:38:36 INFO  - Partita iniziata contro 1
+2025-04-17 13:38:36 INFO  - Chiave AES ricevuta e decifrata per l'utente: 2
+2025-04-17 13:38:36 INFO  - In attesa di un avversario...
+2025-04-17 13:38:38 INFO  - Mossa inviata: Paper
+2025-04-17 13:38:38 INFO  - Giocatore 2 ha scelto Paper
+2025-04-17 13:38:40 INFO  - Mossa inviata: Spock
+2025-04-17 13:38:40 INFO  - Giocatore 1 ha scelto Spock
+2025-04-17 13:38:40 INFO  - Risultati inviati a entrambi i giocatori
+2025-04-17 13:38:40 INFO  - Risultato ricevuto: Paper disproves Spock
+2025-04-17 13:38:40 INFO  - Risultato ricevuto: Paper disproves Spock
+2025-04-17 13:38:41 INFO  - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-17 13:38:44 INFO  - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-17 13:38:44 INFO  - Sessione di gioco resettata per una nuova manche
+2025-04-17 13:38:44 INFO  - Entrambi i giocatori pronti per una nuova manche
+2025-04-17 13:38:44 INFO  - Partita iniziata contro 1
+2025-04-17 13:38:44 INFO  - Partita iniziata contro 2
+2025-04-17 13:38:45 INFO  - Connessione chiusa
+2025-04-17 13:38:45 INFO  - Client rimosso: 2
+2025-04-17 13:38:45 INFO  - Connessione chiusa con: 2
+2025-04-17 13:38:45 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-04-17 13:38:47 INFO  - Client rimosso: 1
+2025-04-17 13:38:47 INFO  - Connessione chiusa con: 1
+2025-04-17 13:38:47 INFO  - Connessione chiusa
+2025-04-17 13:38:47 ERROR - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.read(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(Unknown Source)
+	at java.base/java.net.Socket$SocketInputStream.read(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(Unknown Source)
+	at java.base/sun.nio.cs.StreamDecoder.read(Unknown Source)
+	at java.base/java.io.InputStreamReader.read(Unknown Source)
+	at java.base/java.io.BufferedReader.fill(Unknown Source)
+	at java.base/java.io.BufferedReader.implReadLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at java.base/java.io.BufferedReader.readLine(Unknown Source)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Unknown Source)

@@ -161,7 +161,7 @@ public class Client {
     private void handlePublicKey(Message message) throws Exception {
         String publicKeyBase64 = message.getKey();
         this.serverPublicKey = CryptoUtils.decodePublicKey(publicKeyBase64);
-        logger.info("Chiave pubblica RSA ricevuta dal server");
+        logger.debug("Chiave pubblica RSA ricevuta dal server");
         
         // Genera una chiave AES casuale
         this.aesKey = CryptoUtils.generateAESKey();
@@ -173,7 +173,7 @@ public class Client {
         Message aesKeyMessage = Message.createAesKey(encryptedKeyBase64);
         sendMessage(aesKeyMessage);
         
-        logger.info("Chiave AES generata e inviata al server");
+        logger.debug("Chiave AES generata e inviata al server");
         
         // Completa il future della connessione
         connectionFuture.complete(null);

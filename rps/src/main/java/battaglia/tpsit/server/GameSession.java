@@ -118,7 +118,7 @@ public class GameSession {
                 GameResult result2 = getResultForPlayer(player2);
                 handler2.sendGameResult(result2);
                 
-                logger.info("Risultati inviati a entrambi i giocatori");
+                logger.debug("Risultati inviati a entrambi i giocatori");
             } else {
                 logger.error("Impossibile inviare risultati, uno o entrambi gli handler non sono disponibili");
             }
@@ -170,7 +170,7 @@ public class GameSession {
         moves.clear();
         movesProcessed = false;
         movesLatch = new CountDownLatch(2); // Resetta il latch
-        logger.info("Sessione di gioco resettata per una nuova manche");
+        logger.debug("Sessione di gioco resettata per una nuova manche");
     }
     
     /**
