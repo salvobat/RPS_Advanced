@@ -4,7 +4,7 @@ import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
 
 import javax.swing.*;
-import javax.swing.border.*;
+// import javax.swing.border.*; // Non usato
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -20,7 +20,7 @@ public class ClientGUI {
     private static final Color SECONDARY_COLOR = new Color(41, 128, 185);
     private static final Color SUCCESS_COLOR = new Color(46, 204, 113);
     private static final Color DANGER_COLOR = new Color(231, 76, 60);
-    private static final Color WARNING_COLOR = new Color(241, 196, 15);
+    //private static final Color WARNING_COLOR = new Color(241, 196, 15); // Non usato
     private static final Color INFO_COLOR = new Color(52, 73, 94);
     private static final Color LIGHT_COLOR = new Color(236, 240, 241);
     
