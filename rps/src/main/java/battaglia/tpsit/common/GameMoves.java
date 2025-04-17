@@ -4,7 +4,7 @@ package battaglia.tpsit.common;
  * Enumerazione delle possibili mosse nel gioco "Rock Paper Scissors Lizard Spock".
  */
 public enum GameMoves {
-    ROCK, PAPER, SCISSORS, LIZARD, SPOCK;
+    SASSO, CARTA, FORBICE, LUCERTOLA, SPOCK;
     
     /**
      * Determina se questa mossa batte la mossa dell'avversario.
@@ -14,16 +14,16 @@ public enum GameMoves {
      */
     public boolean beats(GameMoves opponentMove) {
         switch (this) {
-            case ROCK:
-                return opponentMove == SCISSORS || opponentMove == LIZARD;
-            case PAPER:
-                return opponentMove == ROCK || opponentMove == SPOCK;
-            case SCISSORS:
-                return opponentMove == PAPER || opponentMove == LIZARD;
-            case LIZARD:
-                return opponentMove == PAPER || opponentMove == SPOCK;
+            case SASSO:
+                return opponentMove == FORBICE || opponentMove == LUCERTOLA;
+            case CARTA:
+                return opponentMove == SASSO || opponentMove == SPOCK;
+            case FORBICE:
+                return opponentMove == CARTA || opponentMove == LUCERTOLA;
+            case LUCERTOLA:
+                return opponentMove == CARTA || opponentMove == SPOCK;
             case SPOCK:
-                return opponentMove == ROCK || opponentMove == SCISSORS;
+                return opponentMove == SASSO || opponentMove == FORBICE;
             default:
                 return false;
         }
@@ -37,25 +37,25 @@ public enum GameMoves {
      */
     public String getWinDescription(GameMoves opponent) {
         switch (this) {
-            case ROCK:
-                if (opponent == SCISSORS) return "Rock crushes Scissors";
-                if (opponent == LIZARD) return "Rock crushes Lizard";
+            case SASSO:
+                if (opponent == FORBICE) return "La Roccia rompe le Forbici";
+                if (opponent == LUCERTOLA) return "La Roccia schiaccia la Lucertola";
                 break;
-            case PAPER:
-                if (opponent == ROCK) return "Paper covers Rock";
-                if (opponent == SPOCK) return "Paper disproves Spock";
+            case CARTA:
+                if (opponent == SASSO) return "La Carta copre la Roccia";
+                if (opponent == SPOCK) return "La Carta smentisce Spock";
                 break;
-            case SCISSORS:
-                if (opponent == PAPER) return "Scissors cuts Paper";
-                if (opponent == LIZARD) return "Scissors decapitates Lizard";
+            case FORBICE:
+                if (opponent == CARTA) return "La Forbice taglia la Carta";
+                if (opponent == LUCERTOLA) return "La Forbice decapita la Lucertola";
                 break;
-            case LIZARD:
-                if (opponent == PAPER) return "Lizard eats Paper";
-                if (opponent == SPOCK) return "Lizard poisons Spock";
+            case LUCERTOLA:
+                if (opponent == CARTA) return "La Lucertola mangia la Carta";
+                if (opponent == SPOCK) return "La Lucertola avvelena Spock";
                 break;
             case SPOCK:
-                if (opponent == ROCK) return "Spock vaporizes Rock";
-                if (opponent == SCISSORS) return "Spock smashes Scissors";
+                if (opponent == SASSO) return "Spock vaporizza la Roccia";
+                if (opponent == FORBICE) return "Spock frantuma le Forbici";
                 break;
         }
         return "";

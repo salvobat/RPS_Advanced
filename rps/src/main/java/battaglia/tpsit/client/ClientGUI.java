@@ -3,6 +3,9 @@ package battaglia.tpsit.client;
 import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.swing.*;
 // import javax.swing.border.*; // Non usato
 import java.awt.*;
@@ -15,6 +18,9 @@ import java.util.Map;
  * Interfaccia grafica per il client.
  */
 public class ClientGUI {
+    private static final Logger logger = LoggerFactory.getLogger(ClientHandler.class);
+
+
     // Colori personalizzati
     private static final Color PRIMARY_COLOR = new Color(52, 152, 219);
     private static final Color SECONDARY_COLOR = new Color(41, 128, 185);
@@ -75,10 +81,10 @@ public class ClientGUI {
         int iconHeight = 50;
 
         // Load and resize custom icons from the resources/img directory
-        moveIcons.put(GameMoves.ROCK, resizeIcon("/img/rock.png", iconWidth, iconHeight));
-        moveIcons.put(GameMoves.PAPER, resizeIcon("/img/paper.png", iconWidth, iconHeight));
-        moveIcons.put(GameMoves.SCISSORS, resizeIcon("/img/scissors.png", iconWidth, iconHeight));
-        moveIcons.put(GameMoves.LIZARD, resizeIcon("/img/lizard.png", iconWidth, iconHeight));
+        moveIcons.put(GameMoves.SASSO, resizeIcon("/img/rock.png", iconWidth, iconHeight));
+        moveIcons.put(GameMoves.CARTA, resizeIcon("/img/paper.png", iconWidth, iconHeight));
+        moveIcons.put(GameMoves.FORBICE, resizeIcon("/img/scissors.png", iconWidth, iconHeight));
+        moveIcons.put(GameMoves.LUCERTOLA, resizeIcon("/img/lizard.png", iconWidth, iconHeight));
         moveIcons.put(GameMoves.SPOCK, resizeIcon("/img/spock.png", iconWidth, iconHeight));
     }
 
@@ -225,7 +231,8 @@ public class ClientGUI {
         loginPanel.add(Box.createVerticalGlue());
         
         // Azione del pulsante Connect
-        connectButton.addActionListener(_ -> {
+        connectButton.addActionListener(e -> {
+            logger.trace("Pulsante premuto: {}", e.getActionCommand());
             String username = usernameField.getText().trim();
             if (username.isEmpty()) {
                 statusLabel.setText("Inserisci un username valido");
@@ -332,19 +339,19 @@ public class ClientGUI {
         // Add buttons to the panel
         gbc.gridx = 0;
         gbc.gridy = 0;
-        buttonsPanel.add(rockButton = createMoveButton("Rock", GameMoves.ROCK), gbc);
+        buttonsPanel.add(rockButton = createMoveButton("Sasso", GameMoves.SASSO), gbc);
 
         gbc.gridx = 1;
         gbc.gridy = 0;
-        buttonsPanel.add(paperButton = createMoveButton("Paper", GameMoves.PAPER), gbc);
+        buttonsPanel.add(paperButton = createMoveButton("Carta", GameMoves.CARTA), gbc);
 
         gbc.gridx = 0;
         gbc.gridy = 1;
-        buttonsPanel.add(scissorsButton = createMoveButton("Scissors", GameMoves.SCISSORS), gbc);
+        buttonsPanel.add(scissorsButton = createMoveButton("Forbice", GameMoves.FORBICE), gbc);
 
         gbc.gridx = 1;
         gbc.gridy = 1;
-        buttonsPanel.add(lizardButton = createMoveButton("Lizard", GameMoves.LIZARD), gbc);
+        buttonsPanel.add(lizardButton = createMoveButton("Lucertola", GameMoves.LUCERTOLA), gbc);
 
         // Center the "Spock" button
         gbc.gridx = 0;
@@ -378,7 +385,8 @@ public class ClientGUI {
                 BorderFactory.createLineBorder(SECONDARY_COLOR),
                 BorderFactory.createEmptyBorder(10, 10, 10, 10)));
         
-        button.addActionListener(_ -> {
+        button.addActionListener(e -> {
+            logger.trace("Pulsante premuto: {}", e.getActionCommand());
             // Disabilita tutti i pulsanti durante l'elaborazione
             setMoveButtonsEnabled(false);
             
@@ -432,7 +440,8 @@ public class ClientGUI {
         playAgainButton.setFocusPainted(false);
         playAgainButton.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
-        playAgainButton.addActionListener(_ -> {
+        playAgainButton.addActionListener(e -> {
+            logger.trace("Pulsante premuto: {}", e.getActionCommand());
             // Invia al server la richiesta di nuovo turno
             try {
                 client.readyForNextRound();
