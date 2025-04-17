@@ -225,7 +225,7 @@ public class ClientGUI {
         loginPanel.add(Box.createVerticalGlue());
         
         // Azione del pulsante Connect
-        connectButton.addActionListener(e -> {
+        connectButton.addActionListener(_ -> {
             String username = usernameField.getText().trim();
             if (username.isEmpty()) {
                 statusLabel.setText("Inserisci un username valido");
@@ -378,7 +378,7 @@ public class ClientGUI {
                 BorderFactory.createLineBorder(SECONDARY_COLOR),
                 BorderFactory.createEmptyBorder(10, 10, 10, 10)));
         
-        button.addActionListener(e -> {
+        button.addActionListener(_ -> {
             // Disabilita tutti i pulsanti durante l'elaborazione
             setMoveButtonsEnabled(false);
             
@@ -432,7 +432,7 @@ public class ClientGUI {
         playAgainButton.setFocusPainted(false);
         playAgainButton.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
-        playAgainButton.addActionListener(e -> {
+        playAgainButton.addActionListener(_ -> {
             // Invia al server la richiesta di nuovo turno
             try {
                 client.readyForNextRound();

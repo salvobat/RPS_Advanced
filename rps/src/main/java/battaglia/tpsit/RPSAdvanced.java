@@ -51,13 +51,13 @@ public class RPSAdvanced {
         JLabel label = new JLabel("Seleziona cosa vuoi avviare:", SwingConstants.CENTER);
         
         JButton serverButton = new JButton("Avvia Server");
-        serverButton.addActionListener(e -> {
+        serverButton.addActionListener(_ -> {
             frame.dispose();
             startServer();
         });
         
         JButton clientButton = new JButton("Avvia Client");
-        clientButton.addActionListener(e -> {
+        clientButton.addActionListener(_ -> {
             frame.dispose();
             startClient();
         });
@@ -90,7 +90,7 @@ public class RPSAdvanced {
             statusLabel.setFont(new Font("Arial", Font.BOLD, 16));
             
             JButton stopButton = new JButton("Arresta Server");
-            stopButton.addActionListener(e -> {
+            stopButton.addActionListener(_ -> {
                 server.stop();
                 statusLabel.setText("Server arrestato");
                 stopButton.setEnabled(false);
