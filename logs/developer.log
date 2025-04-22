@@ -1570,3 +1570,380 @@ java.net.SocketException: Socket closed
 	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
 	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-17 16:06:55 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
+2025-04-17 16:06:56 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
+2025-04-17 16:07:03 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-17 16:07:09 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-17 16:07:13 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-17 16:07:13 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-17 16:07:14 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 1
+2025-04-17 16:07:14 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: 1
+2025-04-17 16:07:14 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-17 16:07:16 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-17 16:07:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-17 16:07:16 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 2
+2025-04-17 16:07:16 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: 2
+2025-04-17 16:07:16 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-17 16:07:16 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-17 16:07:17 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-17 16:07:17 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-17 16:07:21 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-17 16:07:22 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Forbice
+2025-04-17 16:07:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-17 16:07:23 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Carta
+2025-04-17 16:07:23 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice taglia la Carta
+2025-04-17 16:07:23 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice taglia la Carta
+2025-04-17 16:07:27 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-17 16:07:29 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-17 16:07:29 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-17 16:07:29 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-17 16:07:29 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-17 16:07:31 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-17 16:07:31 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-17 16:07:33 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Sasso
+2025-04-17 16:07:33 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Sasso
+2025-04-17 16:07:33 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Spock vaporizza la Roccia
+2025-04-17 16:07:33 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Spock vaporizza la Roccia
+2025-04-17 16:07:34 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-17 16:07:36 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-17 16:07:36 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-17 16:07:36 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-17 16:07:36 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-17 16:07:40 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-17 16:07:40 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: 1
+2025-04-17 16:07:40 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 1
+2025-04-17 16:07:40 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-17 16:07:41 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-17 16:07:41 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: 2
+2025-04-17 16:07:41 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 2
+2025-04-17 16:07:41 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:51:43 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
+2025-04-22 20:51:44 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
+2025-04-22 20:51:51 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:51:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:52:02 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:52:02 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:52:02 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 1
+2025-04-22 20:52:03 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: 1
+2025-04-22 20:52:03 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:52:05 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:52:05 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:52:05 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 2
+2025-04-22 20:52:05 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: 2
+2025-04-22 20:52:05 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-22 20:52:05 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:05 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:05 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:52:09 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:52:09 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Lucertola
+2025-04-22 20:52:11 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Sasso
+2025-04-22 20:52:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Sasso
+2025-04-22 20:52:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Roccia schiaccia la Lucertola
+2025-04-22 20:52:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Roccia schiaccia la Lucertola
+2025-04-22 20:52:18 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:20 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:20 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:20 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:20 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:22 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:52:22 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-22 20:52:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:52:23 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Spock
+2025-04-22 20:52:23 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Spock
+2025-04-22 20:52:23 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Spock
+2025-04-22 20:52:26 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:27 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:27 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:27 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:29 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-22 20:52:29 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Forbice
+2025-04-22 20:52:30 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:52:30 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Carta
+2025-04-22 20:52:30 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice taglia la Carta
+2025-04-22 20:52:30 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice taglia la Carta
+2025-04-22 20:52:33 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:34 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:34 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:34 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:34 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:36 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:52:36 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Lucertola
+2025-04-22 20:52:37 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:52:37 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Lucertola
+2025-04-22 20:52:37 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Lucertola
+2025-04-22 20:52:37 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Lucertola
+2025-04-22 20:52:38 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:39 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:39 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:39 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:39 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:41 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:52:41 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Carta
+2025-04-22 20:52:42 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:52:42 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Carta
+2025-04-22 20:52:42 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Carta
+2025-04-22 20:52:42 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Carta
+2025-04-22 20:52:44 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:45 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:45 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:45 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:45 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:46 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-22 20:52:46 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Forbice
+2025-04-22 20:52:47 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-22 20:52:47 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Forbice
+2025-04-22 20:52:47 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Forbice
+2025-04-22 20:52:47 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Forbice
+2025-04-22 20:52:49 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:50 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:50 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:50 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:52:50 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:51 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:52:51 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-22 20:52:52 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:52:52 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Carta
+2025-04-22 20:52:52 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Carta smentisce Spock
+2025-04-22 20:52:52 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Carta smentisce Spock
+2025-04-22 20:52:53 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:52:54 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:52:54 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:52:54 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:52:54 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:53:03 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:53:06 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:53:06 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:53:06 [pool-1-thread-3] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 3
+2025-04-22 20:53:06 [pool-1-thread-3] INFO  battaglia.tpsit.server.Server - Client registrato: 3
+2025-04-22 20:53:07 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:53:09 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:53:11 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:53:11 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:53:11 [pool-1-thread-4] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 4
+2025-04-22 20:53:11 [pool-1-thread-4] INFO  battaglia.tpsit.server.Server - Client registrato: 4
+2025-04-22 20:53:11 [pool-1-thread-4] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: 3 vs 4
+2025-04-22 20:53:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 4
+2025-04-22 20:53:11 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 3
+2025-04-22 20:53:11 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:53:21 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:53:21 [pool-1-thread-4] INFO  battaglia.tpsit.server.GameSession - Giocatore 4 ha scelto Lucertola
+2025-04-22 20:53:22 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:53:22 [pool-1-thread-3] INFO  battaglia.tpsit.server.GameSession - Giocatore 3 ha scelto Carta
+2025-04-22 20:53:22 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Lucertola mangia la Carta
+2025-04-22 20:53:22 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Lucertola mangia la Carta
+2025-04-22 20:53:24 [pool-1-thread-4] INFO  b.tpsit.server.ServerClientHandler - Giocatore 4 ha cliccato Gioca Ancora
+2025-04-22 20:53:25 [pool-1-thread-3] INFO  b.tpsit.server.ServerClientHandler - Giocatore 3 ha cliccato Gioca Ancora
+2025-04-22 20:53:25 [pool-1-thread-3] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:53:25 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 4
+2025-04-22 20:53:25 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 3
+2025-04-22 20:53:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:53:26 [pool-1-thread-4] INFO  battaglia.tpsit.server.GameSession - Giocatore 4 ha scelto Spock
+2025-04-22 20:53:26 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:53:26 [pool-1-thread-3] INFO  battaglia.tpsit.server.GameSession - Giocatore 3 ha scelto Spock
+2025-04-22 20:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Spock
+2025-04-22 20:53:26 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Spock
+2025-04-22 20:53:29 [pool-1-thread-3] INFO  b.tpsit.server.ServerClientHandler - Giocatore 3 ha cliccato Gioca Ancora
+2025-04-22 20:53:30 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:53:30 [pool-1-thread-4] INFO  battaglia.tpsit.server.Server - Client rimosso: 4
+2025-04-22 20:53:30 [pool-1-thread-4] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 4
+2025-04-22 20:53:30 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:53:32 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:53:32 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-22 20:53:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:53:34 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Lucertola
+2025-04-22 20:53:34 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Lucertola avvelena Spock
+2025-04-22 20:53:34 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Lucertola avvelena Spock
+2025-04-22 20:53:35 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:53:36 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:53:36 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:53:36 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:53:36 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:53:37 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: 1
+2025-04-22 20:53:37 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 1
+2025-04-22 20:53:37 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:53:37 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:53:38 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: 2
+2025-04-22 20:53:38 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:53:38 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 2
+2025-04-22 20:53:38 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:53:39 [pool-1-thread-3] INFO  battaglia.tpsit.server.Server - Client rimosso: 3
+2025-04-22 20:53:39 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:53:39 [pool-1-thread-3] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 3
+2025-04-22 20:53:39 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:53:50 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del server...
+2025-04-22 20:53:51 [Thread-0] INFO  battaglia.tpsit.server.Server - Server avviato sulla porta 12345
+2025-04-22 20:53:57 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:54:00 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:54:00 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:54:00 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 1
+2025-04-22 20:54:00 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client registrato: 1
+2025-04-22 20:54:01 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:54:08 [AWT-EventQueue-0] INFO  battaglia.tpsit.RPSAdvanced - Avvio del client...
+2025-04-22 20:54:10 [Thread-0] INFO  battaglia.tpsit.server.Server - Nuova connessione da /127.0.0.1
+2025-04-22 20:54:10 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Client avviato e connesso al server
+2025-04-22 20:54:10 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Richiesta di connessione da: 2
+2025-04-22 20:54:10 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client registrato: 2
+2025-04-22 20:54:10 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Nuova sessione di gioco avviata: 1 vs 2
+2025-04-22 20:54:10 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:54:10 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:54:10 [Thread-0] INFO  battaglia.tpsit.client.Client - In attesa di un avversario...
+2025-04-22 20:54:11 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:54:11 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Lucertola
+2025-04-22 20:54:13 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:54:13 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Lucertola
+2025-04-22 20:54:13 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Lucertola
+2025-04-22 20:54:13 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Draw - Both players chose Lucertola
+2025-04-22 20:54:14 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:54:15 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:54:15 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:54:15 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:54:15 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:54:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:54:16 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-22 20:54:16 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Carta
+2025-04-22 20:54:16 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Carta
+2025-04-22 20:54:16 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Carta smentisce Spock
+2025-04-22 20:54:16 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Carta smentisce Spock
+2025-04-22 20:54:20 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:54:21 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:54:21 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:54:21 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:54:21 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:54:23 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-22 20:54:23 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Forbice
+2025-04-22 20:54:24 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Lucertola
+2025-04-22 20:54:24 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Lucertola
+2025-04-22 20:54:24 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice decapita la Lucertola
+2025-04-22 20:54:24 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: La Forbice decapita la Lucertola
+2025-04-22 20:54:28 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Giocatore 1 ha cliccato Gioca Ancora
+2025-04-22 20:54:29 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Giocatore 2 ha cliccato Gioca Ancora
+2025-04-22 20:54:29 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Entrambi i giocatori pronti per una nuova manche
+2025-04-22 20:54:29 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 1
+2025-04-22 20:54:29 [Thread-0] INFO  battaglia.tpsit.client.Client - Partita iniziata contro 2
+2025-04-22 20:54:31 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Spock
+2025-04-22 20:54:31 [pool-1-thread-1] INFO  battaglia.tpsit.server.GameSession - Giocatore 1 ha scelto Spock
+2025-04-22 20:54:32 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Mossa inviata: Forbice
+2025-04-22 20:54:32 [pool-1-thread-2] INFO  battaglia.tpsit.server.GameSession - Giocatore 2 ha scelto Forbice
+2025-04-22 20:54:32 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Spock frantuma le Forbici
+2025-04-22 20:54:32 [Thread-0] INFO  battaglia.tpsit.client.Client - Risultato ricevuto: Spock frantuma le Forbici
+2025-04-22 20:54:34 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:54:34 [pool-1-thread-2] INFO  battaglia.tpsit.server.Server - Client rimosso: 2
+2025-04-22 20:54:34 [pool-1-thread-2] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 2
+2025-04-22 20:54:35 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2025-04-22 20:54:35 [pool-1-thread-1] INFO  battaglia.tpsit.server.Server - Client rimosso: 1
+2025-04-22 20:54:35 [pool-1-thread-1] INFO  b.tpsit.server.ServerClientHandler - Connessione chiusa con: 1
+2025-04-22 20:54:35 [AWT-EventQueue-0] INFO  battaglia.tpsit.client.Client - Connessione chiusa
+2025-04-22 20:54:35 [Thread-0] ERROR battaglia.tpsit.client.ClientHandler - Errore durante la lettura dei messaggi dal server
+java.net.SocketException: Socket closed
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:295)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:337)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:179)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at battaglia.tpsit.client.ClientHandler.run(ClientHandler.java:40)
+	at java.base/java.lang.Thread.run(Thread.java:834)
