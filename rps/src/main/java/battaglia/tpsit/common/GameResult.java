@@ -36,7 +36,7 @@ public class GameResult implements Serializable {
         this.playerMove = playerMove;
         this.opponentMove = opponentMove;
         this.draw = true;
-        this.winDescription = "Draw - Both players chose " + playerMove;
+        this.winDescription = "Pareggio - Entrambi i giocatori hanno scelto " + playerMove;
     }
     
     // Getters e Setters

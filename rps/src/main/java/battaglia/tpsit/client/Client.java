@@ -233,6 +233,8 @@ public class Client {
      */
     public void close() {
         try {
+            connected.set(false);
+            
             if (socket != null && !socket.isClosed()) {
                 socket.close();
             }
@@ -242,8 +244,10 @@ public class Client {
             if (writer != null) {
                 writer.close();
             }
+            if (clientHandler != null) {
+                clientHandler.stop();
+            }
             
-            connected.set(false);
             logger.info("Connessione chiusa");
         } catch (Exception e) {
             logger.error("Errore durante la chiusura della connessione", e);

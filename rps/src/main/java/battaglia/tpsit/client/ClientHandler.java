@@ -7,6 +7,9 @@ import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.net.SocketException;
+import javax.swing.SwingUtilities;
+import javax.swing.JOptionPane;
 
 /**
  * Gestore dei messaggi in arrivo dal server.
@@ -39,7 +42,10 @@ public class ClientHandler implements Runnable {
             while (running) {
                 String messageStr = reader.readLine();
                 if (messageStr == null) {
-                    break; // Server disconnected
+                    // Server disconnected
+                    logger.warn("Il server si è disconnesso (EOF)");
+                    handleDisconnection("Il server si è disconnesso");
+                    break;
                 }
                 
                 // Parse the message
@@ -48,14 +54,38 @@ public class ClientHandler implements Runnable {
                 // Let the client handle the message
                 client.handleMessage(message);
             }
+        } catch (SocketException e) {
+            if (running) {
+                logger.error("Connessione al server persa", e);
+                handleDisconnection("Connessione al server persa: " + e.getMessage());
+            }
         } catch (IOException e) {
             if (running) {
                 logger.error("Errore durante la lettura dei messaggi dal server", e);
+                handleDisconnection("Errore di comunicazione: " + e.getMessage());
             }
         } catch (Exception e) {
             logger.error("Errore imprevisto nel client handler", e);
+            handleDisconnection("Errore imprevisto: " + e.getMessage());
         } finally {
             stop();
+        }
+    }
+    
+    /**
+     * Gestisce la disconnessione dal server.
+     * 
+     * @param message Il messaggio di errore da mostrare
+     */
+    private void handleDisconnection(String message) {
+        if (client.isConnected()) {
+            SwingUtilities.invokeLater(() -> {
+                JOptionPane.showMessageDialog(null, 
+                        message, 
+                        "Errore di connessione", 
+                        JOptionPane.ERROR_MESSAGE);
+            });
+            client.close();
         }
     }
     
