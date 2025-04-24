@@ -1,8 +1,5 @@
 package battaglia.tpsit.common;
 
-// import org.slf4j.Logger; //Non usato
-// import org.slf4j.LoggerFactory; //Non usato
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -14,10 +11,11 @@ import java.util.Base64;
 
 /**
  * Classe di utilità per la gestione della crittografia.
+ * Fornisce metodi per generare chiavi RSA e AES, criptare e decriptare dati,
+ * e convertire chiavi in formato Base64.
  */
 public class CryptoUtils {
-    // private static final Logger logger = LoggerFactory.getLogger(CryptoUtils.class); //Non usato
-    
+
     private static final String RSA_ALGORITHM = "RSA";
     private static final String AES_ALGORITHM = "AES";
     private static final int RSA_KEY_SIZE = 2048;

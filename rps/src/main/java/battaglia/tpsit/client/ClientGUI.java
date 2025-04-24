@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Interfaccia grafica per il client.
+ * Classe che gestisce l'interfaccia grafica del client.
  */
 public class ClientGUI {
     private static final Logger logger = LoggerFactory.getLogger(ClientHandler.class);
@@ -26,7 +26,6 @@ public class ClientGUI {
     private static final Color SECONDARY_COLOR = new Color(41, 128, 185);
     private static final Color SUCCESS_COLOR = new Color(46, 204, 113);
     private static final Color DANGER_COLOR = new Color(231, 76, 60);
-    //private static final Color WARNING_COLOR = new Color(241, 196, 15); // Non usato
     private static final Color INFO_COLOR = new Color(52, 73, 94);
     private static final Color LIGHT_COLOR = new Color(236, 240, 241);
     
@@ -64,10 +63,20 @@ public class ClientGUI {
         applyCustomStyle();
     }
 
+    /**
+     * Ottiene l'ultima mossa effettuata.
+     *
+     * @return L'ultima mossa
+     */
     private GameMoves getLastMove() {
         return lastMove;
     }
-    
+
+    /**
+     * Imposta l'ultima mossa effettuata.
+     *
+     * @param lastMove L'ultima mossa
+     */
     private void setLastMove(GameMoves lastMove) {
         this.lastMove = lastMove;
     }
@@ -89,12 +98,12 @@ public class ClientGUI {
     }
 
     /**
-     * Resizes an icon to the specified width and height.
+     * Ridimensiona un'icona alla larghezza e altezza specificate.
      *
-     * @param path  The path to the image resource.
-     * @param width The desired width of the icon.
-     * @param height The desired height of the icon.
-     * @return The resized ImageIcon.
+     * @param path  Il percorso dell'immagine
+     * @param width La larghezza desiderata
+     * @param height L'altezza desiderata
+     * @return L'icona ridimensionata
      */
     private ImageIcon resizeIcon(String path, int width, int height) {
         ImageIcon originalIcon = new ImageIcon(getClass().getResource(path));
@@ -203,7 +212,6 @@ public class ClientGUI {
         connectButton = new JButton("Connect");
         connectButton.setFont(new Font("Arial", Font.BOLD, 14));
         connectButton.setBackground(PRIMARY_COLOR);
-        //connectButton.setForeground(Color.WHITE);
         connectButton.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
         connectButton.setFocusPainted(false);
         
@@ -333,10 +341,10 @@ public class ClientGUI {
         buttonsPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
 
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10); // Spacing between buttons
+        gbc.insets = new Insets(10, 10, 10, 10); // Spaziatura tra i pulsanti
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        // Add buttons to the panel
+        // Aggiunta dei pulsanti delle mosse
         gbc.gridx = 0;
         gbc.gridy = 0;
         buttonsPanel.add(rockButton = createMoveButton("Sasso", GameMoves.SASSO), gbc);
@@ -353,10 +361,10 @@ public class ClientGUI {
         gbc.gridy = 1;
         buttonsPanel.add(lizardButton = createMoveButton("Lucertola", GameMoves.LUCERTOLA), gbc);
 
-        // Center the "Spock" button
+        // Aggiunta del pulsante Spock in una riga separata per centrarlo
         gbc.gridx = 0;
         gbc.gridy = 2;
-        gbc.gridwidth = 2; // Span across two columns
+        gbc.gridwidth = 2; // Espandi su entrambe le colonne
         gbc.anchor = GridBagConstraints.CENTER;
         buttonsPanel.add(spockButton = createMoveButton("Spock", GameMoves.SPOCK), gbc);
 
@@ -436,7 +444,6 @@ public class ClientGUI {
         playAgainButton = new JButton("Gioca ancora");
         playAgainButton.setFont(new Font("Arial", Font.BOLD, 14));
         playAgainButton.setBackground(SUCCESS_COLOR);
-        //playAgainButton.setForeground(Color.WHITE);
         playAgainButton.setFocusPainted(false);
         playAgainButton.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
         
@@ -573,7 +580,7 @@ public class ClientGUI {
     }
     
     /**
-     * Punto di ingresso principale.
+     * Metodo main che avvia la GUI.
      */
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {

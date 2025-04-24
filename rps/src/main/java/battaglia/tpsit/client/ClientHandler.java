@@ -12,21 +12,22 @@ import javax.swing.SwingUtilities;
 import javax.swing.JOptionPane;
 
 /**
- * Gestore dei messaggi in arrivo dal server.
+ * Classe che gestisce i messaggi in arrivo dal server.
+ * Implementa l'interfaccia {@link Runnable} per essere eseguita in un thread separato.
  */
 public class ClientHandler implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(ClientHandler.class);
-    
+
     private Client client;
     private BufferedReader reader;
     private ObjectMapper objectMapper;
     private volatile boolean running;
-    
+
     /**
      * Costruttore per il gestore dei messaggi.
-     * 
+     *
      * @param client Il client a cui è associato questo handler
-     * @param reader Il BufferedReader per leggere i messaggi dal server
+     * @param reader Il {@link BufferedReader} per leggere i messaggi dal server
      */
     public ClientHandler(Client client, BufferedReader reader) {
         this.client = client;
@@ -34,24 +35,28 @@ public class ClientHandler implements Runnable {
         this.objectMapper = new ObjectMapper();
         this.running = true;
     }
-    
+
+    /**
+     * Metodo eseguito quando il thread viene avviato.
+     * Legge i messaggi dal server e li passa al client per la gestione.
+     */
     @Override
     public void run() {
         try {
-            // Keep reading messages until stopped
+            // Continua a leggere i messaggi finché l'handler è in esecuzione
             while (running) {
                 String messageStr = reader.readLine();
                 if (messageStr == null) {
-                    // Server disconnected
+                    // Il server si è disconnesso
                     logger.warn("Il server si è disconnesso (EOF)");
                     handleDisconnection("Il server si è disconnesso");
                     break;
                 }
-                
-                // Parse the message
+
+                // Analizza il messaggio ricevuto
                 Message message = objectMapper.readValue(messageStr, Message.class);
-                
-                // Let the client handle the message
+
+                // Passa il messaggio al client per la gestione
                 client.handleMessage(message);
             }
         } catch (SocketException e) {
@@ -71,26 +76,30 @@ public class ClientHandler implements Runnable {
             stop();
         }
     }
-    
+
     /**
      * Gestisce la disconnessione dal server.
-     * 
+     * Mostra un messaggio di errore all'utente e chiude il client.
+     *
      * @param message Il messaggio di errore da mostrare
      */
     private void handleDisconnection(String message) {
         if (client.isConnected()) {
             SwingUtilities.invokeLater(() -> {
-                JOptionPane.showMessageDialog(null, 
-                        message, 
-                        "Errore di connessione", 
-                        JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(
+                        null,
+                        message,
+                        "Errore di connessione",
+                        JOptionPane.ERROR_MESSAGE
+                );
             });
             client.close();
         }
     }
-    
+
     /**
-     * Ferma l'handler.
+     * Ferma l'esecuzione dell'handler.
+     * Imposta il flag {@code running} a {@code false}.
      */
     public void stop() {
         running = false;

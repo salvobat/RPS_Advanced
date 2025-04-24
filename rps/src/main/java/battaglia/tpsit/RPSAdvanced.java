@@ -7,17 +7,23 @@ import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
-// import java.awt.event.ActionEvent; //Non usato
-// import java.awt.event.ActionListener; // //Non usato
 
 /**
- * Classe principale per l'avvio dell'applicazione.
+ * Classe principale per l'avvio dell'applicazione "Rock Paper Scissors Advanced".
+ * Permette di avviare il server o il client tramite argomenti o una finestra di dialogo.
  */
 public class RPSAdvanced {
     private static final Logger logger = LoggerFactory.getLogger(RPSAdvanced.class);
     
     /**
-     * Punto di ingresso principale.
+     * Punto di ingresso principale dell'applicazione.
+     *
+     * @param args Argomenti della riga di comando:
+     *             <ul>
+     *                 <li>{@code --server}: Avvia il server</li>
+     *                 <li>{@code --client}: Avvia il client</li>
+     *             </ul>
+     *             Se nessun argomento è specificato, viene mostrata una finestra di dialogo per scegliere.
      */
     public static void main(String[] args) {
         // Se viene passato l'argomento "--server", avvia solo il server
@@ -74,6 +80,7 @@ public class RPSAdvanced {
     
     /**
      * Avvia il server.
+* Crea una semplice interfaccia grafica per monitorare lo stato del server e fermarlo.
      */
     private static void startServer() {
         logger.info("Avvio del server...");
@@ -112,6 +119,7 @@ public class RPSAdvanced {
     
     /**
      * Avvia il client.
+* Crea e mostra l'interfaccia grafica del client.
      */
     private static void startClient() {
         logger.info("Avvio del client...");

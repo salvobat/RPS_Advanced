@@ -19,7 +19,6 @@ import battaglia.tpsit.common.CryptoUtils;
 import battaglia.tpsit.common.GameMoves;
 import battaglia.tpsit.common.GameResult;
 import battaglia.tpsit.common.Message;
-// import battaglia.tpsit.common.MessageType; //Non usato
 
 /**
  * Gestore della connessione con un singolo client sul lato server.
@@ -61,6 +60,10 @@ public class ServerClientHandler implements Runnable {
         }
     }
     
+    /**
+     * Metodo principale eseguito quando il thread viene avviato.
+     * Gestisce la comunicazione con il client.
+     */
     @Override
     public void run() {
         try {
@@ -100,7 +103,6 @@ public class ServerClientHandler implements Runnable {
                 case READY:
                     handleReady();
                     break;
-                
                 default:
                     logger.warn("Tipo di messaggio non gestito: {}", message.getType());
             }
@@ -163,17 +165,19 @@ public class ServerClientHandler implements Runnable {
         
         // Registra la mossa nella sessione di gioco
         currentGameSession.registerMove(username, move);
-        
-        // Il processamento dei risultati è ora gestito dalla GameSession
-        // Non facciamo nulla qui, sarà la GameSession a occuparsi dell'invio dei risultati
     }
 
+    /**
+     * Gestisce un messaggio di tipo READY.
+     */
     private void handleReady() {
         logger.info("Giocatore {} ha cliccato Gioca Ancora", username);
-        readyForNextRound(); // richiama il metodo esistente
+        readyForNextRound();
     }
     
-
+    /**
+     * Registra che il giocatore è pronto per la prossima manche.
+     */
     public void readyForNextRound() {
         if (currentGameSession != null) {
             currentGameSession.playerReadyForNextRound(username);
@@ -248,6 +252,11 @@ public class ServerClientHandler implements Runnable {
         }
     }
 
+    /**
+     * Invia il risultato della partita al client.
+     * 
+     * @param result Il risultato della partita
+     */
     public void sendGameResult(GameResult result) {
         try {
             String resultJson = objectMapper.writeValueAsString(result);
@@ -259,8 +268,4 @@ public class ServerClientHandler implements Runnable {
             logger.error("Errore durante l'invio del risultato di gioco", e);
         }
     }
-
-    
-
-
 }

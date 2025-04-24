@@ -16,10 +16,12 @@ public class GameLogic {
      * Determina il risultato della partita tra due giocatori.
      * 
      * @param player1 Nome del primo giocatore
-     * @param move1 Mossa del primo giocatore
+     * @param move1   Mossa del primo giocatore
      * @param player2 Nome del secondo giocatore
-     * @param move2 Mossa del secondo giocatore
-     * @return Risultato della partita
+     * @param move2   Mossa del secondo giocatore
+     * @return Un oggetto {@link GameResult} che rappresenta il risultato della partita.
+     *         Se le mosse sono uguali, il risultato sarà un pareggio.
+     *         Altrimenti, il vincitore sarà determinato in base alle regole del gioco.
      */
     public static GameResult determineResult(String player1, GameMoves move1, String player2, GameMoves move2) {
         if (move1 == move2) {

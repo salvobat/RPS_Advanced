@@ -1,16 +1,16 @@
 package battaglia.tpsit.common;
 
 /**
- * Enumerazione delle possibili mosse nel gioco "Rock Paper Scissors Lizard Spock".
+ * Enumerazione delle possibili mosse nel gioco "Sasso Carta Forbice Lucertola Spock".
  */
 public enum GameMoves {
     SASSO, CARTA, FORBICE, LUCERTOLA, SPOCK;
-    
+
     /**
      * Determina se questa mossa batte la mossa dell'avversario.
-     * 
+     *
      * @param opponentMove La mossa dell'avversario
-     * @return true se questa mossa batte quella dell'avversario, false altrimenti
+     * @return {@code true} se questa mossa batte quella dell'avversario, {@code false} altrimenti
      */
     public boolean beats(GameMoves opponentMove) {
         switch (this) {
@@ -28,10 +28,10 @@ public enum GameMoves {
                 return false;
         }
     }
-    
+
     /**
      * Restituisce una descrizione della regola di vittoria.
-     * 
+     *
      * @param opponent La mossa dell'avversario
      * @return Una stringa che descrive come questa mossa batte quella dell'avversario
      */
@@ -60,9 +60,11 @@ public enum GameMoves {
         }
         return "";
     }
-    
+
     /**
-     * Restituisce il nome dell'enumerazione in formato leggibile (prima lettera maiuscola)
+     * Restituisce il nome dell'enumerazione in formato leggibile (prima lettera maiuscola).
+     *
+     * @return Il nome della mossa con la prima lettera maiuscola.
      */
     @Override
     public String toString() {

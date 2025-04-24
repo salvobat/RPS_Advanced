@@ -21,22 +21,23 @@ import battaglia.tpsit.common.CryptoUtils;
 public class Server {
     private static final Logger logger = LoggerFactory.getLogger(Server.class);
     private static final int PORT = 12345;
-    
+
     private ServerSocket serverSocket;
     private boolean running;
     private ExecutorService executorService;
     private Map<String, ServerClientHandler> connectedClients;
     private Map<String, GameSession> gameSessions;
     private KeyPair serverKeyPair;
-    
+
     /**
      * Costruttore del server.
+     * Inizializza le strutture dati e genera la coppia di chiavi RSA.
      */
     public Server() {
         this.connectedClients = new ConcurrentHashMap<>();
         this.gameSessions = new ConcurrentHashMap<>();
         this.executorService = Executors.newCachedThreadPool();
-        
+
         try {
             this.serverKeyPair = CryptoUtils.generateRSAKeyPair();
             logger.debug("Chiavi RSA generate con successo");
@@ -45,20 +46,20 @@ public class Server {
             throw new RuntimeException("Impossibile avviare il server: errore di crittografia");
         }
     }
-    
+
     /**
-     * Avvia il server.
+     * Avvia il server e accetta connessioni dai client.
      */
     public void start() {
         try {
             serverSocket = new ServerSocket(PORT);
             running = true;
             logger.info("Server avviato sulla porta {}", PORT);
-            
+
             while (running) {
                 Socket clientSocket = serverSocket.accept();
                 logger.info("Nuova connessione da {}", clientSocket.getInetAddress());
-                
+
                 // Crea un nuovo handler per il client
                 ServerClientHandler clientHandler = new ServerClientHandler(this, clientSocket, serverKeyPair);
                 executorService.submit(clientHandler);
@@ -71,9 +72,9 @@ public class Server {
             stop();
         }
     }
-    
+
     /**
-     * Ferma il server.
+     * Ferma il server e chiude tutte le connessioni.
      */
     public void stop() {
         try {
@@ -87,31 +88,31 @@ public class Server {
             logger.error("Errore durante l'arresto del server", e);
         }
     }
-    
+
     /**
      * Registra un client connesso.
-     * 
+     *
      * @param username Nome utente del client
-     * @param handler Handler del client
+     * @param handler  Handler del client
      */
     public void registerClient(String username, ServerClientHandler handler) {
         connectedClients.put(username, handler);
         logger.info("Client registrato: {}", username);
-        
+
         // Verifica se è possibile avviare una nuova partita
         checkForMatchmaking();
     }
-    
+
     /**
      * Rimuove un client dalla lista dei client connessi.
-     * 
+     *
      * @param username Nome utente del client da rimuovere
      */
     public void removeClient(String username) {
         connectedClients.remove(username);
         logger.info("Client rimosso: {}", username);
     }
-    
+
     /**
      * Controlla se ci sono abbastanza client per avviare una partita.
      */
@@ -122,70 +123,78 @@ public class Server {
                 .filter(username -> !isClientInGame(username))
                 .limit(2)
                 .toArray(String[]::new);
-            
+
             if (availableClients.length == 2) {
                 String player1 = availableClients[0];
                 String player2 = availableClients[1];
-                
+
                 // Crea una nuova sessione di gioco
                 String sessionId = player1 + "-" + player2;
                 GameSession gameSession = new GameSession(sessionId, player1, player2, this);
                 gameSessions.put(sessionId, gameSession);
-                
+
                 // Notifica i client dell'inizio della partita
                 ServerClientHandler handler1 = connectedClients.get(player1);
                 ServerClientHandler handler2 = connectedClients.get(player2);
-                
+
                 handler1.setCurrentGameSession(gameSession);
                 handler2.setCurrentGameSession(gameSession);
-                
+
                 handler1.notifyGameStart(player2);
                 handler2.notifyGameStart(player1);
-                
+
                 logger.info("Nuova sessione di gioco avviata: {} vs {}", player1, player2);
             }
         }
     }
 
+    /**
+     * Restituisce l'handler del client connesso specificato.
+     *
+     * @param username Nome utente del client
+     * @return L'handler del client, o {@code null} se non è connesso
+     */
     public ServerClientHandler getConnectedClient(String username) {
         return connectedClients.get(username);
     }
-    
+
     /**
      * Verifica se un client è già in una sessione di gioco.
-     * 
+     *
      * @param username Nome utente del client
-     * @return true se il client è in una sessione di gioco, false altrimenti
+     * @return {@code true} se il client è in una sessione di gioco, {@code false} altrimenti
      */
     private boolean isClientInGame(String username) {
         return gameSessions.values().stream()
             .anyMatch(session -> session.hasPlayer(username) && !session.isGameOver());
     }
-    
+
     /**
      * Termina una sessione di gioco.
-     * 
+     *
      * @param sessionId ID della sessione di gioco
      */
     public void endGameSession(String sessionId) {
         gameSessions.remove(sessionId);
         logger.info("Sessione di gioco terminata: {}", sessionId);
-        
+
         // Verifica se è possibile avviare una nuova partita
         checkForMatchmaking();
     }
 
     /**
      * Restituisce la coppia di chiavi RSA del server.
-     * 
+     *
      * @return La coppia di chiavi RSA
      */
     public KeyPair getServerKeyPair() {
-        return serverKeyPair; // Assumes serverKeyPair is a field in the Server class
+        return serverKeyPair;
     }
-    
+
     /**
-     * Punto di ingresso principale.
+     * Avvia il server.
+     *
+     * @param args Argomenti della riga di comando
      */
     public static void main(String[] args) {
         Server server = new Server();
