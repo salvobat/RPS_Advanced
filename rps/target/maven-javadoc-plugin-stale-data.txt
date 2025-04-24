@@ -1,0 +1,61 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'C:/Users/salvo/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar;C:/Users/salvo/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar;C:/Users/salvo/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar;C:/Users/salvo/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar;C:/Users/salvo/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar;C:/Users/salvo/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar;C:/Users/salvo/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'C:/Users/salvo/Desktop/provatpsit/RPS_Advanced/rps/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/salvo/Desktop/provatpsit/RPS_Advanced/rps/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'RPS_Advanced 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/salvo/Desktop/provatpsit/RPS_Advanced/rps/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'RPS_Advanced 1.0-SNAPSHOT API'
+battaglia.tpsit.client
+battaglia.tpsit.common
+battaglia.tpsit
+battaglia.tpsit.server
+C:\Users\salvo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar = 1744793918020
+C:\Users\salvo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar = 1744793918172
+C:\Users\salvo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar = 1744793918205
+C:\Users\salvo\.m2\repository\ch\qos\logback\logback-classic\1.2.6\logback-classic-1.2.6.jar = 1738506628622
+C:\Users\salvo\.m2\repository\ch\qos\logback\logback-core\1.2.6\logback-core-1.2.6.jar = 1738506628721
+C:\Users\salvo\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar = 1738506629434
+C:\Users\salvo\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar = 1731665356323
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\src\main\java = 1745518249952
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\allclasses-index.html = 1745518413580
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\allclasses.html = 1745518413593
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\allpackages-index.html = 1745518413584
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\constant-values.html = 1745518413431
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\deprecated-list.html = 1745518413590
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\element-list = 1745518413378
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\help-doc.html = 1745518413608
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\index-all.html = 1745518413574
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\index.html = 1745518413601
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\jquery-ui.overrides.css = 1745518413643
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\member-search-index.js = 1745518413571
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\overview-summary.html = 1745518413604
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\overview-tree.html = 1745518413540
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\package-search-index.js = 1745518413566
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\script.js = 1745518413614
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\search.js = 1745518413619
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\serialized-form.html = 1745518413445
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\stylesheet.css = 1745518413612
+C:\Users\salvo\Desktop\provatpsit\RPS_Advanced\rps\target\reports\apidocs\type-search-index.js = 1745518413568
